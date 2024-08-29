@@ -21,7 +21,7 @@
 		"@vitejs/test-read-file-content": "file:./read-file-content",
 		"@vitejs/test-require-absolute": "file:./require-absolute",
 		"@vitejs/test-ts-transpiled-exports": "file:./ts-transpiled-exports",
-		"bcrypt": "^5.1.1"
+		"bcrypt": "5.1.1"
 	},
 	"devDependencies": {},
 	"name": "@vitejs/test-ssr-deps",

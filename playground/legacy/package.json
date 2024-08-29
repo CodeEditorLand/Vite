@@ -1,7 +1,7 @@
 {
 	"devDependencies": {
 		"@vitejs/plugin-legacy": "workspace:*",
-		"terser": "^5.31.6"
+		"terser": "5.31.6"
 	},
 	"name": "@vitejs/test-legacy",
 	"scripts": {

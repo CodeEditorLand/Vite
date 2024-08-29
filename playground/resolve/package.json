@@ -20,7 +20,7 @@
 		"@vitejs/test-resolve-linked": "workspace:*",
 		"@vitejs/test-resolve-sharp-dir": "link:./sharp-dir",
 		"es5-ext": "0.10.64",
-		"normalize.css": "^8.0.1"
+		"normalize.css": "8.0.1"
 	},
 	"imports": {
 		"#nested/path.js": "./imports-path/nested-path.js",
