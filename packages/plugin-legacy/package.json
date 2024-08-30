@@ -2,7 +2,7 @@
 	"dependencies": {
 		"browserslist": "4.23.3",
 		"browserslist-to-esbuild": "2.1.1",
-		"core-js": "3.38.0",
+		"core-js": "3.38.1",
 		"magic-string": "0.30.11",
 		"regenerator-runtime": "0.14.1",
 		"systemjs": "6.15.1"
