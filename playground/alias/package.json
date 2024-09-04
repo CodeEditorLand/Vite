@@ -1,6 +1,6 @@
 {
 	"dependencies": {
-		"@vue/shared": "3.4.38",
+		"@vue/shared": "3.5.1",
 		"aliased-module": "file:./dir/module"
 	},
 	"devDependencies": {
