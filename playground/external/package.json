@@ -6,7 +6,7 @@
 	"devDependencies": {
 		"slash3": "npm:slash@^5.1.0",
 		"slash5": "npm:slash@^5.1.0",
-		"vue32": "npm:vue@~3.5.1"
+		"vue32": "npm:vue@~3.5.2"
 	},
 	"name": "@vitejs/test-external",
 	"scripts": {
