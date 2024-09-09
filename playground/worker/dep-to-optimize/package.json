@@ -1,7 +1,4 @@
 {
-  "name": "@vitejs/test-dep-to-optimize",
-  "private": true,
-  "version": "1.0.0",
-  "type": "module",
-  "main": "index.js"
+	"main": "index.js",
+	"name": "@vitejs/test-dep-to-optimize"
 }

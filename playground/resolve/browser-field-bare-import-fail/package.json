@@ -1,8 +1,5 @@
 {
-  "name": "@vitejs/test-resolve-browser-field-bare-import-fail",
-  "private": true,
-  "version": "1.0.0",
-  "main": "main.js",
-  "module": "module.js",
-  "type": "module"
+	"main": "main.js",
+	"module": "module.js",
+	"name": "@vitejs/test-resolve-browser-field-bare-import-fail"
 }
