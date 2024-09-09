@@ -1,3 +1,4 @@
 {
-	"name": "@vitejs/test-resolve-imports-pkg"
+  "name": "@vitejs/test-resolve-imports-pkg",
+  "private": true
 }
