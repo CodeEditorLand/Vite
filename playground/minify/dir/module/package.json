@@ -1,3 +1,6 @@
 {
-	"name": "@vitejs/test-minify"
+  "name": "@vitejs/test-minify",
+  "private": true,
+  "type": "module",
+  "version": "0.0.0"
 }

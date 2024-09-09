@@ -1,15 +1,19 @@
 {
-	"dependencies": {
-		"@vitejs/test-browser-exports": "file:./browser-exports",
-		"@vitejs/test-worker-exports": "file:./worker-exports"
-	},
-	"devDependencies": {
-		"@vitejs/test-resolve-linked": "workspace:*",
-		"miniflare": "3.20240821.1"
-	},
-	"name": "@vitejs/test-ssr-webworker",
-	"scripts": {
-		"build:worker": "vite build --ssr src/entry-worker.jsx --outDir dist/worker",
-		"dev": "DEV=1 node worker"
-	}
+  "name": "@vitejs/test-ssr-webworker",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "DEV=1 node worker",
+    "build:worker": "vite build --ssr src/entry-worker.jsx --outDir dist/worker"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "@vitejs/test-browser-exports": "file:./browser-exports",
+    "@vitejs/test-worker-exports": "file:./worker-exports"
+  },
+  "devDependencies": {
+    "miniflare": "^3.20240806.1",
+    "@vitejs/test-resolve-linked": "workspace:*"
+  }
 }

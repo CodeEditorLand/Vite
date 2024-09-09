@@ -1,7 +1,7 @@
 {
-	"extends": "../tsconfig.json",
-	"include": ["./"],
-	"compilerOptions": {
-		"useDefineForClassFields": false
-	}
+  "extends": "../tsconfig.json",
+  "include": ["./"],
+  "compilerOptions": {
+    "useDefineForClassFields": false
+  }
 }
