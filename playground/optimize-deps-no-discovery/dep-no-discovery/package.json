@@ -1,4 +1,6 @@
 {
-	"main": "index.js",
-	"name": "@vitejs/test-dep-no-discovery"
+  "name": "@vitejs/test-dep-no-discovery",
+  "private": true,
+  "version": "1.0.0",
+  "main": "index.js"
 }

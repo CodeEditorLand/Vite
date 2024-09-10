@@ -1,7 +1,9 @@
 {
-	"browser": {
-		"./index.js": "./index.browser.js"
-	},
-	"main": "index.js",
-	"name": "@vitejs/test-multi-entry-dep"
+  "name": "@vitejs/test-multi-entry-dep",
+  "private": true,
+  "version": "0.0.0",
+  "main": "index.js",
+  "browser": {
+    "./index.js": "./index.browser.js"
+  }
 }

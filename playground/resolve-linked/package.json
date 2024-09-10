@@ -1,4 +1,7 @@
 {
-	"main": "src/index.js",
-	"name": "@vitejs/test-resolve-linked"
+  "name": "@vitejs/test-resolve-linked",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "main": "src/index.js"
 }
