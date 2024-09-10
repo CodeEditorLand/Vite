@@ -1,11 +1,9 @@
 {
-  "name": "@vitejs/test-module-condition",
-  "private": true,
-  "version": "0.0.0",
-  "exports": {
-    ".": {
-      "module": "./module.js",
-      "import": "./import.mjs"
-    }
-  }
+	"exports": {
+		".": {
+			"import": "./import.mjs",
+			"module": "./module.js"
+		}
+	},
+	"name": "@vitejs/test-module-condition"
 }
