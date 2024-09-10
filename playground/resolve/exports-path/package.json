@@ -1,16 +1,18 @@
 {
-	"exports": {
-		".": {
-			"import": "./main.js",
-			"require": "./cjs.js"
-		},
-		"./deep.js": "./deep.js",
-		"./deep.json": "./deep.json",
-		"./dir-mapped/*": {
-			"import": "./dir/*",
-			"require": "./dir-cjs/*"
-		},
-		"./dir/": "./dir/"
-	},
-	"name": "@vitejs/test-resolve-exports-path"
+  "name": "@vitejs/test-resolve-exports-path",
+  "private": true,
+  "version": "1.0.0",
+  "exports": {
+    ".": {
+      "import": "./main.js",
+      "require": "./cjs.js"
+    },
+    "./deep.js": "./deep.js",
+    "./deep.json": "./deep.json",
+    "./dir/": "./dir/",
+    "./dir-mapped/*": {
+      "import": "./dir/*",
+      "require": "./dir-cjs/*"
+    }
+  }
 }
