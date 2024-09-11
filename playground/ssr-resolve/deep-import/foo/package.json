@@ -1,3 +1,6 @@
 {
-	"module": "./index.js"
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "module": "./index.js"
 }
