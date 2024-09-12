@@ -1,6 +1,4 @@
 {
-  "name": "dep",
-  "private": true,
-  "version": "1.0.0",
-  "main": "index.js"
+	"main": "index.js",
+	"name": "dep"
 }
