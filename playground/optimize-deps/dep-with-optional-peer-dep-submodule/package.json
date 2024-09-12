@@ -1,9 +1,15 @@
 {
-	"main": "index.js",
-	"name": "@vitejs/test-dep-with-optional-peer-dep-submodule",
-	"peerDependenciesMeta": {
-		"foobar": {
-			"optional": true
-		}
-	}
+  "name": "@vitejs/test-dep-with-optional-peer-dep-submodule",
+  "private": true,
+  "version": "0.0.0",
+  "main": "index.js",
+  "type": "module",
+  "peerDependencies": {
+    "foobar": "0.0.0"
+  },
+  "peerDependenciesMeta": {
+    "foobar": {
+      "optional": true
+    }
+  }
 }
