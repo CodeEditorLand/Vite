@@ -1,4 +1,7 @@
 {
-	"main": "../utils/bar.js",
-	"module": "../utils/bar.js"
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "main": "../utils/bar.js",
+  "module": "../utils/bar.js"
 }
