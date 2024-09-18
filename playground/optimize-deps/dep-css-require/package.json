@@ -1,4 +1,6 @@
 {
-	"main": "index.cjs",
-	"name": "@vitejs/test-dep-css-require"
+  "name": "@vitejs/test-dep-css-require",
+  "private": true,
+  "version": "0.0.0",
+  "main": "index.cjs"
 }

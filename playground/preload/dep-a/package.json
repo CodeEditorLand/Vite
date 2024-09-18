@@ -1,4 +1,7 @@
 {
-	"main": "index.js",
-	"name": "@vitejs/test-dep-a"
+  "name": "@vitejs/test-dep-a",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "main": "index.js"
 }
