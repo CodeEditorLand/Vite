@@ -1,5 +1,3 @@
 {
-  "name": "@vitejs/test-entries",
-  "private": true,
-  "version": "0.0.0"
+	"name": "@vitejs/test-entries"
 }
