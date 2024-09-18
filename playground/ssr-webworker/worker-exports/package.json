@@ -1,13 +1,11 @@
 {
-  "name": "@vitejs/test-worker-exports",
-  "private": true,
-  "version": "0.0.0",
-  "exports": {
-    ".": {
-      "worker": "./worker.js",
-      "browser": "./browser.js",
-      "node": "./node.js",
-      "default": "./node.js"
-    }
-  }
+	"exports": {
+		".": {
+			"browser": "./browser.js",
+			"default": "./node.js",
+			"node": "./node.js",
+			"worker": "./worker.js"
+		}
+	},
+	"name": "@vitejs/test-worker-exports"
 }

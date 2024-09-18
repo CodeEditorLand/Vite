@@ -1,8 +1,6 @@
 {
-  "name": "@vitejs/test-css-dep",
-  "private": true,
-  "version": "1.0.0",
-  "main": "index.js",
-  "style": "index.css",
-  "sass": "index.scss"
+	"main": "index.js",
+	"name": "@vitejs/test-css-dep",
+	"sass": "index.scss",
+	"style": "index.css"
 }
