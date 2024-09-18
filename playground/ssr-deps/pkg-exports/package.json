@@ -1,6 +1,9 @@
 {
-	"exports": {
-		".": "./index.js"
-	},
-	"name": "@vitejs/test-pkg-exports"
+  "name": "@vitejs/test-pkg-exports",
+  "private": true,
+  "version": "0.0.0",
+  "exports": {
+    ".": "./index.js"
+  },
+  "type": "module"
 }

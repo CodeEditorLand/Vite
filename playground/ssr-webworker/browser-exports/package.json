@@ -1,10 +1,12 @@
 {
-	"exports": {
-		".": {
-			"browser": "./browser.js",
-			"default": "./node.js",
-			"node": "./node.js"
-		}
-	},
-	"name": "@vitejs/test-browser-exports"
+  "name": "@vitejs/test-browser-exports",
+  "private": true,
+  "version": "0.0.0",
+  "exports": {
+    ".": {
+      "browser": "./browser.js",
+      "node": "./node.js",
+      "default": "./node.js"
+    }
+  }
 }
