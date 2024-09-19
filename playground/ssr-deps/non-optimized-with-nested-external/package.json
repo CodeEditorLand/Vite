@@ -1,11 +1,8 @@
 {
-  "name": "@vitejs/test-non-optimized-with-nested-external",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "main": "index.js",
-  "dependencies": {
-    "nested-external": "file:../nested-external",
-    "nested-external-cjs": "file:../nested-external-cjs"
-  }
+	"dependencies": {
+		"nested-external": "file:../nested-external",
+		"nested-external-cjs": "file:../nested-external-cjs"
+	},
+	"main": "index.js",
+	"name": "@vitejs/test-non-optimized-with-nested-external"
 }

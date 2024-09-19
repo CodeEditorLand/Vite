@@ -1,7 +1,4 @@
 {
-  "name": "@vitejs/test-deep-import",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "module": "index.js"
+	"module": "index.js",
+	"name": "@vitejs/test-deep-import"
 }
