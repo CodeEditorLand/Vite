@@ -1,7 +1,10 @@
 {
-	"dependencies": {
-		"@vitejs/test-nested-include": "file:../nested-include"
-	},
-	"main": "index.js",
-	"name": "@vitejs/test-nested-exclude"
+  "name": "@vitejs/test-nested-exclude",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "dependencies": {
+    "@vitejs/test-nested-include": "file:../nested-include"
+  }
 }
