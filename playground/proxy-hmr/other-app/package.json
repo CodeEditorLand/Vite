@@ -1,11 +1,8 @@
 {
-  "name": "@vitejs/test-other-app",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  }
+	"name": "@vitejs/test-other-app",
+	"scripts": {
+		"build": "vite build",
+		"dev": "vite",
+		"preview": "vite preview"
+	}
 }

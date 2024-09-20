@@ -1,15 +1,10 @@
 {
-  "name": "@vitejs/test-tailwind-sourcemap",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "debug": "node --inspect-brk ../../packages/vite/bin/vite",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "tailwindcss": "^3.4.10"
-  }
+	"dependencies": {},
+	"name": "@vitejs/test-tailwind-sourcemap",
+	"scripts": {
+		"build": "vite build",
+		"debug": "node --inspect-brk ../../packages/vite/bin/vite",
+		"dev": "vite",
+		"preview": "vite preview"
+	}
 }

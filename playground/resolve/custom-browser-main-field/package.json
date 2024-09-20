@@ -1,8 +1,6 @@
 {
-  "name": "@vitejs/test-resolve-custom-browser-main-field",
-  "private": true,
-  "version": "1.0.0",
-  "main": "index.js",
-  "browser": "index.browser.js",
-  "custom": "index.custom.js"
+	"browser": "index.browser.js",
+	"custom": "index.custom.js",
+	"main": "index.js",
+	"name": "@vitejs/test-resolve-custom-browser-main-field"
 }

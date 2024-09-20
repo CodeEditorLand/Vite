@@ -1,8 +1,6 @@
 {
-  "name": "@vitejs/test-forwarded-export",
-  "private": true,
-  "version": "0.0.0",
-  "dependencies": {
-    "object-assigned-exports": "file:../object-assigned-exports"
-  }
+	"dependencies": {
+		"object-assigned-exports": "file:../object-assigned-exports"
+	},
+	"name": "@vitejs/test-forwarded-export"
 }
