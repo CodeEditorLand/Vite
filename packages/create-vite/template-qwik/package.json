@@ -1,18 +1,14 @@
 {
-  "name": "vite-qwik",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "serve dist"
-  },
-  "devDependencies": {
-    "serve": "^14.2.3",
-    "vite": "^5.4.1"
-  },
-  "dependencies": {
-    "@builder.io/qwik": "^1.8.0"
-  }
+	"dependencies": {
+		"@builder.io/qwik": "^1.8.0"
+	},
+	"devDependencies": {
+		"serve": "^14.2.3"
+	},
+	"name": "vite-qwik",
+	"scripts": {
+		"build": "vite build",
+		"dev": "vite",
+		"preview": "serve dist"
+	}
 }

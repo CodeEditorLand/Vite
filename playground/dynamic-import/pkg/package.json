@@ -1,7 +1,4 @@
 {
-  "name": "@vitejs/test-pkg",
-  "type": "module",
-  "private": true,
-  "version": "1.0.0",
-  "main": "index.js"
+	"main": "index.js",
+	"name": "@vitejs/test-pkg"
 }

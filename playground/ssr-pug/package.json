@@ -1,15 +1,11 @@
 {
-  "name": "@vitejs/test-ssr-pug",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "node server",
-    "serve": "NODE_ENV=production node server",
-    "debug": "node --inspect-brk server"
-  },
-  "devDependencies": {
-    "express": "^4.19.2",
-    "pug": "^3.0.3"
-  }
+	"devDependencies": {
+		"pug": "^3.0.3"
+	},
+	"name": "@vitejs/test-ssr-pug",
+	"scripts": {
+		"debug": "node --inspect-brk server",
+		"dev": "node server",
+		"serve": "NODE_ENV=production node server"
+	}
 }
