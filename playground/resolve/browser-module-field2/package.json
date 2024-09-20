@@ -1,5 +1,7 @@
 {
-	"browser": "index.web.js",
-	"module": "index.js",
-	"name": "@vitejs/test-resolve-browser-module-field2"
+  "name": "@vitejs/test-resolve-browser-module-field2",
+  "private": true,
+  "version": "1.0.0",
+  "module": "index.js",
+  "browser": "index.web.js"
 }
