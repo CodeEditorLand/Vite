@@ -1,10 +1,12 @@
 {
-	"exports": {
-		".": {
-			"import": "./index.js",
-			"sass": "./style.scss",
-			"style": "./style.css"
-		}
-	},
-	"name": "@vitejs/test-css-dep-exports"
+  "name": "@vitejs/test-css-dep-exports",
+  "private": true,
+  "version": "1.0.0",
+  "exports": {
+    ".": {
+      "sass": "./style.scss",
+      "style": "./style.css",
+      "import": "./index.js"
+    }
+  }
 }

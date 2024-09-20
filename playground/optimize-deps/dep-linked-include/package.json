@@ -1,5 +1,9 @@
 {
-	"dependencies": {},
-	"main": "index.mjs",
-	"name": "@vitejs/test-dep-linked-include"
+  "name": "@vitejs/test-dep-linked-include",
+  "private": true,
+  "version": "0.0.0",
+  "main": "index.mjs",
+  "dependencies": {
+    "react": "18.3.1"
+  }
 }
