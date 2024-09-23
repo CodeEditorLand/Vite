@@ -1,9 +1,9 @@
 {
 	"dependencies": {
-		"@builder.io/qwik": "^1.8.0"
+		"@builder.io/qwik": "1.9.0"
 	},
 	"devDependencies": {
-		"serve": "^14.2.3"
+		"serve": "14.2.3"
 	},
 	"name": "vite-qwik",
 	"scripts": {

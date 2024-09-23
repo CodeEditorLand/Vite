@@ -1,8 +1,8 @@
 {
 	"devDependencies": {
-		"@shikijs/vitepress-twoslash": "^1.14.1",
-		"feed": "^4.2.2",
-		"vitepress": "1.3.3"
+		"@shikijs/vitepress-twoslash": "1.18.0",
+		"feed": "4.2.2",
+		"vitepress": "1.3.4"
 	},
 	"name": "docs",
 	"scripts": {

@@ -1,6 +1,6 @@
 {
 	"devDependencies": {
-		"sirv": "^2.0.4"
+		"sirv": "2.0.4"
 	},
 	"name": "@vitejs/test-my-lib",
 	"scripts": {

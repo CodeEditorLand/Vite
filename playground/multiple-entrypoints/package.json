@@ -1,6 +1,6 @@
 {
 	"devDependencies": {
-		"sass": "^1.77.8"
+		"sass": "1.79.3"
 	},
 	"name": "@vitejs/test-multiple-entrypoints",
 	"scripts": {

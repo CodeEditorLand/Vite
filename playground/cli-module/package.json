@@ -1,6 +1,6 @@
 {
 	"devDependencies": {
-		"url": "^0.11.4"
+		"url": "0.11.4"
 	},
 	"name": "@vitejs/test-cli-module",
 	"scripts": {

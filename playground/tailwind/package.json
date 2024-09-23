@@ -1,6 +1,6 @@
 {
 	"dependencies": {
-		"autoprefixer": "^10.4.20"
+		"autoprefixer": "10.4.20"
 	},
 	"devDependencies": {},
 	"name": "@vitejs/test-tailwind",

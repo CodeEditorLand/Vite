@@ -1,8 +1,8 @@
 {
 	"dependencies": {},
 	"devDependencies": {
-		"eslint-plugin-react-refresh": "^0.4.9",
-		"globals": "^15.9.0"
+		"eslint-plugin-react-refresh": "0.4.12",
+		"globals": "15.9.0"
 	},
 	"name": "vite-react-starter",
 	"scripts": {
