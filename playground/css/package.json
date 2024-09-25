@@ -1,4 +1,20 @@
 {
+	"name": "@vitejs/test-css",
+	"imports": {
+		"#imports": "./imports-field.css"
+	},
+	"scripts": {
+		"build": "vite build",
+		"build:no-css-minify": "vite --config ./vite.config-no-css-minify.js build",
+		"build:relative-base": "vite --config ./vite.config-relative-base.js build",
+		"debug": "node --inspect-brk ../../packages/vite/bin/vite",
+		"dev": "vite",
+		"dev:no-css-minify": "vite --config ./vite.config-no-css-minify.js dev",
+		"dev:relative-base": "vite --config ./vite.config-relative-base.js dev",
+		"preview": "vite preview",
+		"preview:no-css-minify": "vite --config ./vite.config-no-css-minify.js preview",
+		"preview:relative-base": "vite --config ./vite.config-relative-base.js preview"
+	},
 	"devDependencies": {
 		"@vitejs/test-css-dep": "link:./css-dep",
 		"@vitejs/test-css-dep-exports": "link:./css-dep-exports",
@@ -11,21 +27,5 @@
 		"sass": "1.79.3",
 		"stylus": "0.63.0",
 		"sugarss": "4.0.1"
-	},
-	"imports": {
-		"#imports": "./imports-field.css"
-	},
-	"name": "@vitejs/test-css",
-	"scripts": {
-		"build": "vite build",
-		"build:no-css-minify": "vite --config ./vite.config-no-css-minify.js build",
-		"build:relative-base": "vite --config ./vite.config-relative-base.js build",
-		"debug": "node --inspect-brk ../../packages/vite/bin/vite",
-		"dev": "vite",
-		"dev:no-css-minify": "vite --config ./vite.config-no-css-minify.js dev",
-		"dev:relative-base": "vite --config ./vite.config-relative-base.js dev",
-		"preview": "vite preview",
-		"preview:no-css-minify": "vite --config ./vite.config-no-css-minify.js preview",
-		"preview:relative-base": "vite --config ./vite.config-relative-base.js preview"
 	}
 }

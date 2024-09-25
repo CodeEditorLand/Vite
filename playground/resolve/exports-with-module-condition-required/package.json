@@ -1,7 +1,7 @@
 {
+	"name": "@vitejs/test-resolve-exports-with-module-condition-required",
+	"main": "index.cjs",
 	"dependencies": {
 		"@vitejs/test-resolve-exports-with-module-condition": "link:../exports-with-module-condition"
-	},
-	"main": "index.cjs",
-	"name": "@vitejs/test-resolve-exports-with-module-condition-required"
+	}
 }

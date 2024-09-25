@@ -1,4 +1,4 @@
 {
-	"exports": "./index.js",
-	"name": "@vitejs/test-import-assertion-dep"
+	"name": "@vitejs/test-import-assertion-dep",
+	"exports": "./index.js"
 }

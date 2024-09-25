@@ -1,13 +1,13 @@
 {
-	"dependencies": {
-		"@vitejs/test-ssr-conditions-external": "file:./external",
-		"@vitejs/test-ssr-conditions-no-external": "file:./no-external"
-	},
-	"devDependencies": {},
 	"name": "@vitejs/test-ssr-conditions",
 	"scripts": {
 		"debug": "node --inspect-brk server",
 		"dev": "node server",
 		"serve": "NODE_ENV=production node server"
-	}
+	},
+	"dependencies": {
+		"@vitejs/test-ssr-conditions-external": "file:./external",
+		"@vitejs/test-ssr-conditions-no-external": "file:./no-external"
+	},
+	"devDependencies": {}
 }

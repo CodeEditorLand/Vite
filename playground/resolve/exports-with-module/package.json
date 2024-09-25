@@ -1,7 +1,7 @@
 {
+	"name": "@vitejs/test-resolve-exports-with-module",
 	"exports": {
 		"import": "./import.mjs"
 	},
-	"module": "./module.mjs",
-	"name": "@vitejs/test-resolve-exports-with-module"
+	"module": "./module.mjs"
 }

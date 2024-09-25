@@ -1,6 +1,6 @@
 {
+	"name": "@vitejs/test-no-external-css",
 	"exports": {
 		".": "./index.css"
-	},
-	"name": "@vitejs/test-no-external-css"
+	}
 }

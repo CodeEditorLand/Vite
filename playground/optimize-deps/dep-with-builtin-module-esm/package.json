@@ -1,4 +1,4 @@
 {
-	"main": "index.js",
-	"name": "@vitejs/test-dep-with-builtin-module-esm"
+	"name": "@vitejs/test-dep-with-builtin-module-esm",
+	"main": "index.js"
 }

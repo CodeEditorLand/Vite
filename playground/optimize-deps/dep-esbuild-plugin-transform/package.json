@@ -1,4 +1,4 @@
 {
-	"main": "index.js",
-	"name": "@vitejs/test-dep-esbuild-plugin-transform"
+	"name": "@vitejs/test-dep-esbuild-plugin-transform",
+	"main": "index.js"
 }

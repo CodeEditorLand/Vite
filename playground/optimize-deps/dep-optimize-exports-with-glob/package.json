@@ -1,8 +1,8 @@
 {
+	"name": "@vitejs/test-dep-optimize-exports-with-glob",
 	"exports": {
 		".": "./index.js",
 		"./glob-dir/*": "./glob/*.js",
 		"./named": "./named.js"
-	},
-	"name": "@vitejs/test-dep-optimize-exports-with-glob"
+	}
 }

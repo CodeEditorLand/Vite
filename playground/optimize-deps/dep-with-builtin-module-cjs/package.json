@@ -1,4 +1,4 @@
 {
-	"main": "index.js",
-	"name": "@vitejs/test-dep-with-builtin-module-cjs"
+	"name": "@vitejs/test-dep-with-builtin-module-cjs",
+	"main": "index.js"
 }

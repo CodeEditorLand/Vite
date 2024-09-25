@@ -1,5 +1,5 @@
 {
+	"name": "@vitejs/test-package-c",
 	"main": "index.js",
-	"module": "index-es.js",
-	"name": "@vitejs/test-package-c"
+	"module": "index-es.js"
 }

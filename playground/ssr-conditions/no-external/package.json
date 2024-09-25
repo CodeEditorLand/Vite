@@ -1,4 +1,5 @@
 {
+	"name": "@vitejs/test-ssr-conditions-no-external",
 	"exports": {
 		"./server": {
 			"default": "./default.js",
@@ -13,6 +14,5 @@
 				"workerd": "./edge.js"
 			}
 		}
-	},
-	"name": "@vitejs/test-ssr-conditions-no-external"
+	}
 }

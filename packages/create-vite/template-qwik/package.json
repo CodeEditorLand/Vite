@@ -1,14 +1,14 @@
 {
-	"dependencies": {
-		"@builder.io/qwik": "1.9.0"
-	},
-	"devDependencies": {
-		"serve": "14.2.3"
-	},
 	"name": "vite-qwik",
 	"scripts": {
 		"build": "vite build",
 		"dev": "vite",
 		"preview": "serve dist"
+	},
+	"dependencies": {
+		"@builder.io/qwik": "1.9.0"
+	},
+	"devDependencies": {
+		"serve": "14.2.3"
 	}
 }

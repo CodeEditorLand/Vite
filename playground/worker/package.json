@@ -1,8 +1,4 @@
 {
-	"dependencies": {
-		"@vitejs/test-dep-self-reference-url-worker": "file:./dep-self-reference-url-worker",
-		"@vitejs/test-dep-to-optimize": "file:./dep-to-optimize"
-	},
 	"name": "@vitejs/test-worker",
 	"scripts": {
 		"build": "vite --config ./vite.config-iife.js build",
@@ -27,5 +23,9 @@
 		"preview:sourcemap": "WORKER_MODE=sourcemap vite --config ./vite.config-sourcemap.js preview",
 		"preview:sourcemap-hidden": "WORKER_MODE=hidden vite --config ./vite.config-sourcemap.js preview",
 		"preview:sourcemap-inline": "WORKER_MODE=inline vite --config ./vite.config-sourcemap.js preview"
+	},
+	"dependencies": {
+		"@vitejs/test-dep-self-reference-url-worker": "file:./dep-self-reference-url-worker",
+		"@vitejs/test-dep-to-optimize": "file:./dep-to-optimize"
 	}
 }

@@ -1,7 +1,7 @@
 {
+	"name": "@vitejs/test-external-entry",
 	"exports": {
 		".": "./index.js",
 		"./entry": "./entry.js"
-	},
-	"name": "@vitejs/test-external-entry"
+	}
 }

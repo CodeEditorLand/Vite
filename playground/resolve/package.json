@@ -1,4 +1,20 @@
 {
+	"name": "@vitejs/test-resolve",
+	"imports": {
+		"#nested/path.js": "./imports-path/nested-path.js",
+		"#other-pkg-slash/": "@vitejs/test-resolve-imports-pkg/nest/",
+		"#query": "./imports-path/query.json",
+		"#same-level": "./imports-path/same-level.js",
+		"#slash/": "./imports-path/slash/",
+		"#star/*": "./imports-path/star/*",
+		"#top-level": "./imports-path/top-level.js"
+	},
+	"scripts": {
+		"build": "vite build",
+		"debug": "node --inspect-brk ../../packages/vite/bin/vite",
+		"dev": "vite",
+		"preview": "vite preview"
+	},
 	"dependencies": {
 		"@vitejs/test-require-pkg-with-module-field": "link:./require-pkg-with-module-field",
 		"@vitejs/test-resolve-browser-field": "link:./browser-field",
@@ -21,21 +37,5 @@
 		"@vitejs/test-resolve-sharp-dir": "link:./sharp-dir",
 		"es5-ext": "0.10.64",
 		"normalize.css": "8.0.1"
-	},
-	"imports": {
-		"#nested/path.js": "./imports-path/nested-path.js",
-		"#other-pkg-slash/": "@vitejs/test-resolve-imports-pkg/nest/",
-		"#query": "./imports-path/query.json",
-		"#same-level": "./imports-path/same-level.js",
-		"#slash/": "./imports-path/slash/",
-		"#star/*": "./imports-path/star/*",
-		"#top-level": "./imports-path/top-level.js"
-	},
-	"name": "@vitejs/test-resolve",
-	"scripts": {
-		"build": "vite build",
-		"debug": "node --inspect-brk ../../packages/vite/bin/vite",
-		"dev": "vite",
-		"preview": "vite preview"
 	}
 }
