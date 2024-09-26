@@ -7,7 +7,7 @@
 		"preview": "vite preview"
 	},
 	"dependencies": {
-		"@vue/shared": "3.5.8",
+		"@vue/shared": "3.5.9",
 		"aliased-module": "file:./dir/module"
 	},
 	"devDependencies": {
