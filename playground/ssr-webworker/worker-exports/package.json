@@ -1,5 +1,4 @@
 {
-	"name": "@vitejs/test-worker-exports",
 	"exports": {
 		".": {
 			"browser": "./browser.js",
@@ -7,5 +6,6 @@
 			"node": "./node.js",
 			"worker": "./worker.js"
 		}
-	}
+	},
+	"name": "@vitejs/test-worker-exports"
 }

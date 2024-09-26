@@ -1,10 +1,10 @@
 {
+	"dependencies": {},
 	"name": "@vitejs/test-tailwind-sourcemap",
 	"scripts": {
 		"build": "vite build",
 		"debug": "node --inspect-brk ../../packages/vite/bin/vite",
 		"dev": "vite",
 		"preview": "vite preview"
-	},
-	"dependencies": {}
+	}
 }
