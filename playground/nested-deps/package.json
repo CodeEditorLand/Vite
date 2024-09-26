@@ -1,4 +1,11 @@
 {
+	"name": "@vitejs/test-nested-deps",
+	"scripts": {
+		"build": "vite build",
+		"debug": "node --inspect-brk ../../packages/vite/bin/vite",
+		"dev": "vite",
+		"preview": "vite preview"
+	},
 	"dependencies": {
 		"@vitejs/self-referencing": "link:../self-referencing",
 		"@vitejs/test-package-a": "link:./test-package-a",
@@ -7,12 +14,5 @@
 		"@vitejs/test-package-d": "link:./test-package-d",
 		"@vitejs/test-package-e": "link:./test-package-e",
 		"@vitejs/test-package-f": "link:./test-package-f"
-	},
-	"name": "@vitejs/test-nested-deps",
-	"scripts": {
-		"build": "vite build",
-		"debug": "node --inspect-brk ../../packages/vite/bin/vite",
-		"dev": "vite",
-		"preview": "vite preview"
 	}
 }

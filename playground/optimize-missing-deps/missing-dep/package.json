@@ -1,7 +1,7 @@
 {
+	"name": "@vitejs/test-missing-dep",
+	"main": "index.js",
 	"dependencies": {
 		"@vitejs/test-multi-entry-dep": "file:../multi-entry-dep"
-	},
-	"main": "index.js",
-	"name": "@vitejs/test-missing-dep"
+	}
 }

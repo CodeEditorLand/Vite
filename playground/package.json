@@ -1,10 +1,10 @@
 {
+	"name": "@vitejs/vite-playground",
+	"scripts": {},
 	"devDependencies": {
 		"convert-source-map": "2.0.0",
 		"css-color-names": "1.0.1",
 		"kill-port": "2.0.1",
 		"node-fetch": "3.3.2"
-	},
-	"name": "@vitejs/vite-playground",
-	"scripts": {}
+	}
 }

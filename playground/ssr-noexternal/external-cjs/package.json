@@ -1,7 +1,7 @@
 {
+	"name": "@vitejs/test-external-cjs",
 	"exports": {
 		"import": "./import.mjs",
 		"require": "./require.cjs"
-	},
-	"name": "@vitejs/test-external-cjs"
+	}
 }

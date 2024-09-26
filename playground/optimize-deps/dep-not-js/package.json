@@ -1,4 +1,4 @@
 {
-	"main": "index.notjs",
-	"name": "@vitejs/test-dep-not-js"
+	"name": "@vitejs/test-dep-not-js",
+	"main": "index.notjs"
 }

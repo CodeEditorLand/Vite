@@ -1,4 +1,5 @@
 {
+	"name": "@vitejs/test-resolve-exports-path",
 	"exports": {
 		".": {
 			"import": "./main.js",
@@ -11,6 +12,5 @@
 			"require": "./dir-cjs/*"
 		},
 		"./dir/": "./dir/"
-	},
-	"name": "@vitejs/test-resolve-exports-path"
+	}
 }

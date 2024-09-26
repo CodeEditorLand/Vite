@@ -1,4 +1,39 @@
 {
+	"name": "@vitejs/vite-monorepo",
+	"scripts": {
+		"build": "pnpm -r --filter='./packages/*' run build",
+		"ci-docs": "run-s build docs-build",
+		"ci-publish": "tsx scripts/publishCI.ts",
+		"debug-build": "VITE_TEST_BUILD=1 VITE_PRESERVE_BUILD_ARTIFACTS=1 vitest run -c vitest.config.e2e.ts",
+		"debug-serve": "VITE_DEBUG_SERVE=1 vitest run -c vitest.config.e2e.ts",
+		"dev": "pnpm -r --parallel --filter='./packages/*' run dev",
+		"docs": "pnpm --filter=docs run docs",
+		"docs-build": "pnpm --filter=docs run docs-build",
+		"docs-serve": "pnpm --filter=docs run docs-serve",
+		"preinstall": "npx only-allow pnpm",
+		"release": "tsx scripts/release.ts",
+		"test-build": "VITE_TEST_BUILD=1 vitest run -c vitest.config.e2e.ts",
+		"test-docs": "pnpm run docs-build",
+		"test-serve": "vitest run -c vitest.config.e2e.ts",
+		"test-unit": "vitest run"
+	},
+	"simple-git-hooks": {
+		"pre-commit": "pnpm exec lint-staged --concurrent false"
+	},
+	"lint-staged": {
+		"*": [
+			"prettier --write --cache --ignore-unknown"
+		],
+		"packages/**/*.d.ts": [
+			"eslint --cache --fix"
+		],
+		"packages/*/{src,types}/**/*.ts": [
+			"eslint --cache --fix"
+		],
+		"playground/**/__tests__/**/*.ts": [
+			"eslint --cache --fix"
+		]
+	},
 	"devDependencies": {
 		"@types/babel__preset-env": "7.9.7",
 		"@types/convert-source-map": "2.0.3",
@@ -28,31 +63,7 @@
 		"tslib": "2.7.0",
 		"tsx": "4.19.1"
 	},
-	"lint-staged": {
-		"*": [
-			"prettier --write --cache --ignore-unknown"
-		],
-		"packages/**/*.d.ts": [
-			"eslint --cache --fix"
-		],
-		"packages/*/{src,types}/**/*.ts": [
-			"eslint --cache --fix"
-		],
-		"playground/**/__tests__/**/*.ts": [
-			"eslint --cache --fix"
-		]
-	},
-	"name": "@vitejs/vite-monorepo",
 	"pnpm": {
-		"overrides": {
-			"vite": "workspace:*"
-		},
-		"patchedDependencies": {
-			"acorn@8.12.1": "patches/acorn@8.12.1.patch",
-			"chokidar@3.6.0": "patches/chokidar@3.6.0.patch",
-			"http-proxy@1.18.1": "patches/http-proxy@1.18.1.patch",
-			"sirv@2.0.4": "patches/sirv@2.0.4.patch"
-		},
 		"peerDependencyRules": {
 			"allowedVersions": {
 				"vite": "*"
@@ -62,27 +73,16 @@
 				"postcss",
 				"search-insights"
 			]
+		},
+		"overrides": {
+			"vite": "workspace:*"
+		},
+		"patchedDependencies": {
+			"acorn@8.12.1": "patches/acorn@8.12.1.patch",
+			"chokidar@3.6.0": "patches/chokidar@3.6.0.patch",
+			"http-proxy@1.18.1": "patches/http-proxy@1.18.1.patch",
+			"sirv@2.0.4": "patches/sirv@2.0.4.patch"
 		}
-	},
-	"scripts": {
-		"build": "pnpm -r --filter='./packages/*' run build",
-		"ci-docs": "run-s build docs-build",
-		"ci-publish": "tsx scripts/publishCI.ts",
-		"debug-build": "VITE_TEST_BUILD=1 VITE_PRESERVE_BUILD_ARTIFACTS=1 vitest run -c vitest.config.e2e.ts",
-		"debug-serve": "VITE_DEBUG_SERVE=1 vitest run -c vitest.config.e2e.ts",
-		"dev": "pnpm -r --parallel --filter='./packages/*' run dev",
-		"docs": "pnpm --filter=docs run docs",
-		"docs-build": "pnpm --filter=docs run docs-build",
-		"docs-serve": "pnpm --filter=docs run docs-serve",
-		"preinstall": "npx only-allow pnpm",
-		"release": "tsx scripts/release.ts",
-		"test-build": "VITE_TEST_BUILD=1 vitest run -c vitest.config.e2e.ts",
-		"test-docs": "pnpm run docs-build",
-		"test-serve": "vitest run -c vitest.config.e2e.ts",
-		"test-unit": "vitest run"
-	},
-	"simple-git-hooks": {
-		"pre-commit": "pnpm exec lint-staged --concurrent false"
 	},
 	"stackblitz": {
 		"startCommand": "pnpm --filter='./packages/vite' run dev"

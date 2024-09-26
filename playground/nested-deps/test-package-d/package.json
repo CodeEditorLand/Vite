@@ -1,7 +1,7 @@
 {
+	"name": "@vitejs/test-package-d",
+	"main": "index.js",
 	"dependencies": {
 		"@vitejs/test-package-d-nested": "link:./test-package-d-nested"
-	},
-	"main": "index.js",
-	"name": "@vitejs/test-package-d"
+	}
 }

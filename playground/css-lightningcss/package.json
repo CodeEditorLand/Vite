@@ -1,12 +1,12 @@
 {
-	"devDependencies": {
-		"lightningcss": "1.27.0"
-	},
 	"name": "@vitejs/test-css-lightningcss",
 	"scripts": {
 		"build": "vite build",
 		"debug": "node --inspect-brk ../../packages/vite/bin/vite",
 		"dev": "vite",
 		"preview": "vite preview"
+	},
+	"devDependencies": {
+		"lightningcss": "1.27.0"
 	}
 }

@@ -1,12 +1,12 @@
 {
-	"devDependencies": {
-		"lightningcss": "1.27.0"
-	},
 	"name": "@vitejs/test-css-lightningcss-proxy",
 	"scripts": {
 		"debug": "node --inspect-brk server",
 		"dev": "node server",
 		"preview": "vite preview",
 		"serve": "NODE_ENV=production node server"
+	},
+	"devDependencies": {
+		"lightningcss": "1.27.0"
 	}
 }

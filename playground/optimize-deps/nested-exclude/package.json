@@ -1,7 +1,7 @@
 {
+	"name": "@vitejs/test-nested-exclude",
+	"main": "index.js",
 	"dependencies": {
 		"@vitejs/test-nested-include": "file:../nested-include"
-	},
-	"main": "index.js",
-	"name": "@vitejs/test-nested-exclude"
+	}
 }
