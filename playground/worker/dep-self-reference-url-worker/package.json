@@ -1,4 +1,4 @@
 {
-	"name": "@vitejs/test-dep-self-reference-url-worker",
-	"main": "index.js"
+	"main": "index.js",
+	"name": "@vitejs/test-dep-self-reference-url-worker"
 }

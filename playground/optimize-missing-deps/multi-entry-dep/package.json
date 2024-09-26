@@ -1,7 +1,7 @@
 {
-	"name": "@vitejs/test-multi-entry-dep",
-	"main": "index.js",
 	"browser": {
 		"./index.js": "./index.browser.js"
-	}
+	},
+	"main": "index.js",
+	"name": "@vitejs/test-multi-entry-dep"
 }

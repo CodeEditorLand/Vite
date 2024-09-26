@@ -1,24 +1,4 @@
 {
-	"name": "@vitejs/plugin-legacy",
-	"funding": "https://github.com/vitejs/vite?sponsor=1",
-	"exports": {
-		".": {
-			"import": "./dist/index.mjs",
-			"require": "./dist/index.cjs"
-		}
-	},
-	"main": "./dist/index.cjs",
-	"module": "./dist/index.mjs",
-	"types": "./dist/index.d.ts",
-	"files": [
-		"dist"
-	],
-	"scripts": {
-		"build": "unbuild && pnpm run patch-cjs",
-		"dev": "unbuild --stub",
-		"patch-cjs": "tsx ../../scripts/patchCJS.ts",
-		"prepublishOnly": "npm run build"
-	},
 	"dependencies": {
 		"browserslist": "4.23.3",
 		"browserslist-to-esbuild": "2.1.1",
@@ -31,5 +11,25 @@
 		"acorn": "8.12.1",
 		"picocolors": "1.1.0",
 		"unbuild": "2.0.0"
-	}
+	},
+	"exports": {
+		".": {
+			"import": "./dist/index.mjs",
+			"require": "./dist/index.cjs"
+		}
+	},
+	"files": [
+		"dist"
+	],
+	"funding": "https://github.com/vitejs/vite?sponsor=1",
+	"main": "./dist/index.cjs",
+	"module": "./dist/index.mjs",
+	"name": "@vitejs/plugin-legacy",
+	"scripts": {
+		"build": "unbuild && pnpm run patch-cjs",
+		"dev": "unbuild --stub",
+		"patch-cjs": "tsx ../../scripts/patchCJS.ts",
+		"prepublishOnly": "npm run build"
+	},
+	"types": "./dist/index.d.ts"
 }

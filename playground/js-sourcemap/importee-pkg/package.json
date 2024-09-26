@@ -1,4 +1,4 @@
 {
-	"name": "@vitejs/test-importee-pkg",
-	"main": "./index.js"
+	"main": "./index.js",
+	"name": "@vitejs/test-importee-pkg"
 }

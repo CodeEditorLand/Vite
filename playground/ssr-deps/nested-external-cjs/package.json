@@ -1,4 +1,4 @@
 {
-	"name": "nested-external-cjs",
-	"main": "index.js"
+	"main": "index.js",
+	"name": "nested-external-cjs"
 }

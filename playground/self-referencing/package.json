@@ -1,7 +1,7 @@
 {
-	"name": "@vitejs/self-referencing",
 	"exports": {
 		".": "./index.js",
 		"./test": "./test/index.js"
-	}
+	},
+	"name": "@vitejs/self-referencing"
 }

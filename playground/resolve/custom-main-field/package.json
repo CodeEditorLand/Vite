@@ -1,5 +1,5 @@
 {
-	"name": "@vitejs/test-resolve-custom-main-field",
+	"custom": "index.custom.js",
 	"main": "index.js",
-	"custom": "index.custom.js"
+	"name": "@vitejs/test-resolve-custom-main-field"
 }

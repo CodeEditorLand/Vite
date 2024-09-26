@@ -1,7 +1,7 @@
 {
-	"name": "@vitejs/test-resolve-sharp-dir",
-	"main": "./index.cjs",
 	"dependencies": {
 		"es5-ext": "0.10.64"
-	}
+	},
+	"main": "./index.cjs",
+	"name": "@vitejs/test-resolve-sharp-dir"
 }

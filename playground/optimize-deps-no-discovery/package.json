@@ -1,12 +1,12 @@
 {
+	"dependencies": {
+		"@vitejs/test-dep-no-discovery": "file:./dep-no-discovery"
+	},
 	"name": "@vitejs/test-optimize-deps-no-discovery",
 	"scripts": {
 		"build": "vite build",
 		"debug": "node --inspect-brk ../../packages/vite/bin/vite",
 		"dev": "vite",
 		"preview": "vite preview"
-	},
-	"dependencies": {
-		"@vitejs/test-dep-no-discovery": "file:./dep-no-discovery"
 	}
 }

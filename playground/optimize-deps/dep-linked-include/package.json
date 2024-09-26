@@ -1,5 +1,5 @@
 {
-	"name": "@vitejs/test-dep-linked-include",
+	"dependencies": {},
 	"main": "index.mjs",
-	"dependencies": {}
+	"name": "@vitejs/test-dep-linked-include"
 }

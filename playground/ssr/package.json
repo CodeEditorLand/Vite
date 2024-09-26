@@ -1,10 +1,10 @@
 {
+	"dependencies": {},
+	"devDependencies": {},
 	"name": "@vitejs/test-ssr",
 	"scripts": {
 		"debug": "node --inspect-brk server",
 		"dev": "node server",
 		"serve": "NODE_ENV=production node server"
-	},
-	"dependencies": {},
-	"devDependencies": {}
+	}
 }
