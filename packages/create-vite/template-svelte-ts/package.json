@@ -1,11 +1,11 @@
 {
+	"devDependencies": {
+		"tslib": "2.7.0"
+	},
 	"name": "vite-svelte-ts-starter",
 	"scripts": {
 		"build": "vite build",
 		"dev": "vite",
 		"preview": "vite preview"
-	},
-	"devDependencies": {
-		"tslib": "2.7.0"
 	}
 }

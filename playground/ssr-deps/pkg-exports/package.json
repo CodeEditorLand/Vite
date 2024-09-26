@@ -1,6 +1,6 @@
 {
-	"name": "@vitejs/test-pkg-exports",
 	"exports": {
 		".": "./index.js"
-	}
+	},
+	"name": "@vitejs/test-pkg-exports"
 }

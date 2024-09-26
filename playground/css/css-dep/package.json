@@ -1,6 +1,6 @@
 {
-	"name": "@vitejs/test-css-dep",
 	"main": "index.js",
-	"style": "index.css",
-	"sass": "index.scss"
+	"name": "@vitejs/test-css-dep",
+	"sass": "index.scss",
+	"style": "index.css"
 }

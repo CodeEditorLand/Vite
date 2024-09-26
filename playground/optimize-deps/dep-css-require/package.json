@@ -1,4 +1,4 @@
 {
-	"name": "@vitejs/test-dep-css-require",
-	"main": "index.cjs"
+	"main": "index.cjs",
+	"name": "@vitejs/test-dep-css-require"
 }

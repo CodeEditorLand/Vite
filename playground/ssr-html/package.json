@@ -1,4 +1,6 @@
 {
+	"dependencies": {},
+	"devDependencies": {},
 	"name": "@vitejs/test-ssr-html",
 	"scripts": {
 		"debug": "node --inspect-brk server",
@@ -6,7 +8,5 @@
 		"serve": "NODE_ENV=production node server",
 		"test-stacktrace:off": "node test-stacktrace false",
 		"test-stacktrace:on": "node test-stacktrace true"
-	},
-	"dependencies": {},
-	"devDependencies": {}
+	}
 }

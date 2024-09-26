@@ -1,7 +1,7 @@
 {
-	"name": "@vitejs/test-dep-linked",
-	"main": "index.js",
 	"dependencies": {
 		"lodash-es": "4.17.21"
-	}
+	},
+	"main": "index.js",
+	"name": "@vitejs/test-dep-linked"
 }

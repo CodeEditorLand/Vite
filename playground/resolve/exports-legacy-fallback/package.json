@@ -1,10 +1,10 @@
 {
-	"name": "@vitejs/test-resolve-exports-legacy-fallback",
 	"exports": {
 		".": "index.js",
 		"./dir": {
 			"import": "./dir/index.mjs",
 			"require": "./dir/index.js"
 		}
-	}
+	},
+	"name": "@vitejs/test-resolve-exports-legacy-fallback"
 }

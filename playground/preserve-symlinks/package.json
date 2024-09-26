@@ -1,11 +1,11 @@
 {
+	"dependencies": {
+		"@vitejs/test-module-a": "link:./module-a"
+	},
 	"name": "@vitejs/test-preserve-symlinks",
 	"scripts": {
 		"build": "vite build",
 		"dev": "vite --force",
 		"preview": "vite preview"
-	},
-	"dependencies": {
-		"@vitejs/test-module-a": "link:./module-a"
 	}
 }

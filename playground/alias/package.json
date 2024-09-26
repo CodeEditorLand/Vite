@@ -1,16 +1,16 @@
 {
-	"name": "@vitejs/test-alias",
-	"scripts": {
-		"build": "vite build",
-		"debug": "node --inspect-brk ../../packages/vite/bin/vite",
-		"dev": "vite",
-		"preview": "vite preview"
-	},
 	"dependencies": {
 		"@vue/shared": "3.5.9",
 		"aliased-module": "file:./dir/module"
 	},
 	"devDependencies": {
 		"@vitejs/test-resolve-linked": "workspace:*"
+	},
+	"name": "@vitejs/test-alias",
+	"scripts": {
+		"build": "vite build",
+		"debug": "node --inspect-brk ../../packages/vite/bin/vite",
+		"dev": "vite",
+		"preview": "vite preview"
 	}
 }
