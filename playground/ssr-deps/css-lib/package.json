@@ -1,4 +1,4 @@
 {
-	"name": "@vitejs/test-css-lib",
-	"main": "./index.css"
+	"main": "./index.css",
+	"name": "@vitejs/test-css-lib"
 }

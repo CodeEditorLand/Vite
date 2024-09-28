@@ -1,6 +1,6 @@
 {
-	"name": "@vitejs/test-non-optimizable-include",
 	"exports": {
 		".": "./index.css"
-	}
+	},
+	"name": "@vitejs/test-non-optimizable-include"
 }

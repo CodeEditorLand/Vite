@@ -1,12 +1,12 @@
 {
+	"dependencies": {
+		"lit": "3.2.0"
+	},
+	"devDependencies": {},
 	"name": "vite-lit-ts-starter",
 	"scripts": {
 		"build": "tsc && vite build",
 		"dev": "vite",
 		"preview": "vite preview"
-	},
-	"dependencies": {
-		"lit": "3.2.0"
-	},
-	"devDependencies": {}
+	}
 }

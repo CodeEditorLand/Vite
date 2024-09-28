@@ -1,5 +1,5 @@
 {
+	"main": "./inline",
 	"name": "@vitejs/test-inline-package",
-	"sideEffects": false,
-	"main": "./inline"
+	"sideEffects": false
 }

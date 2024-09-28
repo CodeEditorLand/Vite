@@ -1,4 +1,4 @@
 {
-	"name": "@vitejs/test-dep-relative-to-main",
-	"main": "lib/main.js"
+	"main": "lib/main.js",
+	"name": "@vitejs/test-dep-relative-to-main"
 }

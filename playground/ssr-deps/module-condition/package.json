@@ -1,9 +1,9 @@
 {
-	"name": "@vitejs/test-module-condition",
 	"exports": {
 		".": {
 			"import": "./import.mjs",
 			"module": "./module.js"
 		}
-	}
+	},
+	"name": "@vitejs/test-module-condition"
 }

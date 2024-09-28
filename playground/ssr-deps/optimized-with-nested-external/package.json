@@ -1,7 +1,7 @@
 {
-	"name": "@vitejs/test-optimized-with-nested-external",
-	"main": "index.js",
 	"dependencies": {
 		"nested-external": "file:../nested-external"
-	}
+	},
+	"main": "index.js",
+	"name": "@vitejs/test-optimized-with-nested-external"
 }

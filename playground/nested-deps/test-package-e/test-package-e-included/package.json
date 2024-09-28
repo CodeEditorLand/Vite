@@ -1,7 +1,7 @@
 {
-	"name": "@vitejs/test-package-e-included",
-	"main": "index.js",
 	"dependencies": {
 		"test-package-e-excluded": "link:../test-package-e-excluded"
-	}
+	},
+	"main": "index.js",
+	"name": "@vitejs/test-package-e-included"
 }

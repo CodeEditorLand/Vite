@@ -1,9 +1,9 @@
 {
+	"dependencies": {
+		"@vitejs/test-alias-original": "file:./alias-original"
+	},
 	"name": "@vitejs/test-ssr-html",
 	"scripts": {
 		"build": "vite build"
-	},
-	"dependencies": {
-		"@vitejs/test-alias-original": "file:./alias-original"
 	}
 }

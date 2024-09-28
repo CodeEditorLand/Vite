@@ -1,11 +1,11 @@
 {
+	"devDependencies": {
+		"pug": "3.0.3"
+	},
 	"name": "@vitejs/test-ssr-pug",
 	"scripts": {
 		"debug": "node --inspect-brk server",
 		"dev": "node server",
 		"serve": "NODE_ENV=production node server"
-	},
-	"devDependencies": {
-		"pug": "3.0.3"
 	}
 }

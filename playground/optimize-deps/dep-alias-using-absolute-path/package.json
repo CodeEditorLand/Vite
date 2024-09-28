@@ -1,7 +1,7 @@
 {
-	"name": "@vitejs/test-dep-alias-using-absolute-path",
-	"main": "index.js",
 	"dependencies": {
 		"lodash": "4.17.21"
-	}
+	},
+	"main": "index.js",
+	"name": "@vitejs/test-dep-alias-using-absolute-path"
 }

@@ -1,6 +1,6 @@
 {
-	"name": "@vitejs/test-resolve-custom-browser-main-field",
-	"main": "index.js",
 	"browser": "index.browser.js",
-	"custom": "index.custom.js"
+	"custom": "index.custom.js",
+	"main": "index.js",
+	"name": "@vitejs/test-resolve-custom-browser-main-field"
 }
