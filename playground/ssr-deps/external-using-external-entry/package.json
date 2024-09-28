@@ -1,7 +1,7 @@
 {
+	"name": "@vitejs/test-external-using-external-entry",
+	"main": "index.js",
 	"dependencies": {
 		"external-entry": "file:../external-entry"
-	},
-	"main": "index.js",
-	"name": "@vitejs/test-external-using-external-entry"
+	}
 }

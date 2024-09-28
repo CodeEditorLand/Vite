@@ -1,16 +1,16 @@
 {
-	"devDependencies": {
-		"less": "4.2.0",
-		"magic-string": "0.30.11",
-		"sass": "1.79.3",
-		"stylus": "0.63.0",
-		"sugarss": "4.0.1"
-	},
 	"name": "@vitejs/test-css-sourcemap",
 	"scripts": {
 		"build": "vite build",
 		"debug": "node --inspect-brk ../../packages/vite/bin/vite",
 		"dev": "vite",
 		"preview": "vite preview"
+	},
+	"devDependencies": {
+		"less": "4.2.0",
+		"magic-string": "0.30.11",
+		"sass": "1.79.3",
+		"stylus": "0.63.0",
+		"sugarss": "4.0.1"
 	}
 }

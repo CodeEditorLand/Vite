@@ -1,12 +1,12 @@
 {
-	"dependencies": {
-		"@vitejs/test-deep-import": "file:./deep-import",
-		"@vitejs/test-entries": "file:./entries",
-		"@vitejs/test-resolve-pkg-exports": "file:./pkg-exports"
-	},
 	"name": "@vitejs/test-ssr-resolve",
 	"scripts": {
 		"build": "vite build",
 		"debug": "node --inspect-brk ../../packages/vite/bin/vite build"
+	},
+	"dependencies": {
+		"@vitejs/test-deep-import": "file:./deep-import",
+		"@vitejs/test-entries": "file:./entries",
+		"@vitejs/test-resolve-pkg-exports": "file:./pkg-exports"
 	}
 }

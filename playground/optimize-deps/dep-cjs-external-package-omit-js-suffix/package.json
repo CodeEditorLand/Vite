@@ -1,4 +1,4 @@
 {
-	"main": "index.js",
-	"name": "@vitejs/test-dep-cjs-external-package-omit-js-suffix"
+	"name": "@vitejs/test-dep-cjs-external-package-omit-js-suffix",
+	"main": "index.js"
 }

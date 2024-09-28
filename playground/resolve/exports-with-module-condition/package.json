@@ -1,8 +1,8 @@
 {
+	"name": "@vitejs/test-resolve-exports-with-module-condition",
 	"exports": {
 		"import": "./index.mjs",
 		"module": "./index.esm.js",
 		"require": "./index.js"
-	},
-	"name": "@vitejs/test-resolve-exports-with-module-condition"
+	}
 }

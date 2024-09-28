@@ -1,4 +1,4 @@
 {
-	"main": "index.js",
-	"name": "@vitejs/test-nested-external"
+	"name": "@vitejs/test-nested-external",
+	"main": "index.js"
 }

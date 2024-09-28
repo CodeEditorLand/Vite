@@ -1,4 +1,5 @@
 {
+	"name": "@vitejs/test-resolve-custom-condition",
 	"exports": {
 		".": {
 			"custom": "./index.custom.js",
@@ -6,6 +7,5 @@
 			"require": "./index.js"
 		}
 	},
-	"main": "index.js",
-	"name": "@vitejs/test-resolve-custom-condition"
+	"main": "index.js"
 }

@@ -1,6 +1,6 @@
 {
+	"name": "@vitejs/test-optimized-cjs-with-nested-external",
 	"dependencies": {
 		"nested-external": "file:../nested-external"
-	},
-	"name": "@vitejs/test-optimized-cjs-with-nested-external"
+	}
 }

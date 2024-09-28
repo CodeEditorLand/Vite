@@ -1,4 +1,4 @@
 {
-	"main": "./index.js",
-	"name": "@vitejs/test-import-meta-glob-pkg"
+	"name": "@vitejs/test-import-meta-glob-pkg",
+	"main": "./index.js"
 }

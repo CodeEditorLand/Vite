@@ -1,12 +1,12 @@
 {
-	"dependencies": {
-		"@vitejs/test-pkg": "file:./pkg"
-	},
 	"name": "@vitejs/test-dynamic-import",
 	"scripts": {
 		"build": "vite build",
 		"debug": "node --inspect-brk ../../packages/vite/bin/vite",
 		"dev": "vite",
 		"preview": "vite preview"
+	},
+	"dependencies": {
+		"@vitejs/test-pkg": "file:./pkg"
 	}
 }

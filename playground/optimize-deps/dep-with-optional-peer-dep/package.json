@@ -1,6 +1,6 @@
 {
-	"main": "index.js",
 	"name": "@vitejs/test-dep-with-optional-peer-dep",
+	"main": "index.js",
 	"peerDependenciesMeta": {
 		"foobar": {
 			"optional": true
