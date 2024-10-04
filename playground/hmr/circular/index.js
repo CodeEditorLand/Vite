@@ -1,7 +1,7 @@
-import { msg } from './mod-a'
+import { msg } from "./mod-a";
 
-document.querySelector('.circular').textContent = msg
+document.querySelector(".circular").textContent = msg;
 
 if (import.meta.hot) {
-  import.meta.hot.accept()
+	import.meta.hot.accept();
 }

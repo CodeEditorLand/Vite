@@ -1,4 +1,4 @@
-const modules = import.meta.glob('../*.json', { eager: true })
+const modules = import.meta.glob("../*.json", { eager: true });
 
-export const msg = 'bar'
-export { modules }
+export const msg = "bar";
+export { modules };

@@ -1,1 +1,1 @@
-export const self = 'dynamic-import-static'
+export const self = "dynamic-import-static";

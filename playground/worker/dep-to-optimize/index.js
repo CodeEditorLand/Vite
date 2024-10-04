@@ -1,1 +1,1 @@
-export const msg = 'dep-to-optimize'
+export const msg = "dep-to-optimize";

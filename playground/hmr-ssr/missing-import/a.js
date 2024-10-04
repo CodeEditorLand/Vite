@@ -1,3 +1,3 @@
-import 'missing-modules'
+import "missing-modules";
 
-log('missing test')
+log("missing test");

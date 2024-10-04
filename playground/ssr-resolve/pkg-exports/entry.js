@@ -1,1 +1,1 @@
-module.exports = 'pkg-exports entry'
+module.exports = "pkg-exports entry";

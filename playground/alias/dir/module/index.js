@@ -1,1 +1,1 @@
-export const msg = `[success] aliased module`
+export const msg = `[success] aliased module`;

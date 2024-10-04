@@ -1,1 +1,1 @@
-console.log(__CONFIG_LOADED__)
+console.log(__CONFIG_LOADED__);

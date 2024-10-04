@@ -1,12 +1,12 @@
-import './b'
+import "./b";
 
-export const c = 'c'
+export const c = "c";
 
 function render(content) {
-  globalThis.__HMR__['.self-accept-within-circular'] = content
+	globalThis.__HMR__[".self-accept-within-circular"] = content;
 }
-render(c)
+render(c);
 
 import.meta.hot?.accept((nextExports) => {
-  render(nextExports.c)
-})
+	render(nextExports.c);
+});

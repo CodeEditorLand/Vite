@@ -1,1 +1,1 @@
-export default 'A@2.0.0'
+export default "A@2.0.0";

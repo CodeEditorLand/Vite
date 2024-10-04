@@ -1,3 +1,3 @@
-const message = 'message from isomorphic-module (browser): [browser]'
+const message = "message from isomorphic-module (browser): [browser]";
 
-export default message
+export default message;

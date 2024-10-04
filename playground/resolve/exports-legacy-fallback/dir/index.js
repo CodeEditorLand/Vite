@@ -1,1 +1,1 @@
-export const msg = '[fail] mapped js file'
+export const msg = "[fail] mapped js file";

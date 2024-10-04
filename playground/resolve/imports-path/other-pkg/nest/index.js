@@ -1,1 +1,1 @@
-export const msg = '[success] subpath imports from other package'
+export const msg = "[success] subpath imports from other package";

@@ -1,1 +1,1 @@
-export const msg = '[fail] resolved main field'
+export const msg = "[fail] resolved main field";

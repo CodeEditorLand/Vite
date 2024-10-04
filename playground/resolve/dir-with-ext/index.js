@@ -1,1 +1,1 @@
-export const file = '[success] ./dir-with-ext/index.js'
+export const file = "[success] ./dir-with-ext/index.js";

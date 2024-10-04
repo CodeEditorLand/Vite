@@ -1,3 +1,3 @@
 export function foo() {
-  return '[success] resolve omitted /index.*'
+	return "[success] resolve omitted /index.*";
 }

@@ -1,1 +1,1 @@
-console.log('dynamic/dynamic-no-dep')
+console.log("dynamic/dynamic-no-dep");

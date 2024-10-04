@@ -1,1 +1,1 @@
-module.exports = '[success] imported from main'
+module.exports = "[success] imported from main";

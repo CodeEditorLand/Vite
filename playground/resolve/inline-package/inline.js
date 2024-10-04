@@ -1,1 +1,1 @@
-export const msg = '[success] from inline package'
+export const msg = "[success] from inline package";

@@ -1,1 +1,1 @@
-export * from './display.js'
+export * from "./display.js";

@@ -1,5 +1,5 @@
-export const value = 'mod-a'
+import { value as _value } from "./mod-b";
 
-import { value as _value } from './mod-b'
+export const value = "mod-a";
 
-export const msg = `mod-a -> ${_value}`
+export const msg = `mod-a -> ${_value}`;

@@ -1,1 +1,1 @@
-export default 'node.unbundled.js'
+export default "node.unbundled.js";

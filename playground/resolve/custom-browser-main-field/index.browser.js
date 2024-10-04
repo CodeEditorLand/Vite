@@ -1,1 +1,1 @@
-export const msg = 'resolved browser field'
+export const msg = "resolved browser field";

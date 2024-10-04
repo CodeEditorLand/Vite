@@ -1,5 +1,5 @@
 function okay() {
-  return 'okay'
+	return "okay";
 }
 
-module.exports = { okay }
+module.exports = { okay };

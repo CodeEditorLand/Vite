@@ -1,1 +1,1 @@
-export const msg = 'fail (fallback.umd.js)'
+export const msg = "fail (fallback.umd.js)";

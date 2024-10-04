@@ -1,1 +1,1 @@
-export default 'sub'
+export default "sub";

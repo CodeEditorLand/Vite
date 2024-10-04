@@ -1,1 +1,1 @@
-export const msg = 'fail (browser.js)'
+export const msg = "fail (browser.js)";

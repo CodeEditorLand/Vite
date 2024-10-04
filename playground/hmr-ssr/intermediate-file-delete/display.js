@@ -1,1 +1,1 @@
-export const displayCount = (count) => `count is ${count}`
+export const displayCount = (count) => `count is ${count}`;

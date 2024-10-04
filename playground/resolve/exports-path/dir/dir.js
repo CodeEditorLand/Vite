@@ -1,1 +1,1 @@
-export const msg = '[success] mapped directory from exports'
+export const msg = "[success] mapped directory from exports";

@@ -1,8 +1,8 @@
-import { deadlockfuseModuleExport } from './deadlock-fuse-module'
+import { deadlockfuseModuleExport } from "./deadlock-fuse-module";
 
 /**
  * module Y
  */
 export function middleModuleExport() {
-  void deadlockfuseModuleExport
+	void deadlockfuseModuleExport;
 }

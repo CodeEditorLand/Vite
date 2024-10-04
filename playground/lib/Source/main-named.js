@@ -1,4 +1,4 @@
-export const foo = 'foo'
+export const foo = "foo";
 
 // Force esbuild spread helpers
-console.log({ ...foo })
+console.log({ ...foo });

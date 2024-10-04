@@ -1,5 +1,5 @@
 function astro() {
-  return 'astro'
+	return "astro";
 }
 
-module.exports = { astro }
+module.exports = { astro };

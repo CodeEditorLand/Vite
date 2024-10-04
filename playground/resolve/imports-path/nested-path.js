@@ -1,1 +1,1 @@
-export const msg = '[success] nested path subpath imports'
+export const msg = "[success] nested path subpath imports";

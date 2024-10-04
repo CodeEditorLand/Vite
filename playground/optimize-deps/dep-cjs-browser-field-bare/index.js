@@ -1,5 +1,5 @@
-'use strict'
+"use strict";
 
-const internal = require('./internal')
+const internal = require("./internal");
 
-module.exports = internal
+module.exports = internal;

@@ -1,3 +1,3 @@
-require('./foo.css')
+require("./foo.css");
 
-exports.a = 11
+exports.a = 11;

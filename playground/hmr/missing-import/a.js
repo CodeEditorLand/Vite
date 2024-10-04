@@ -1,3 +1,3 @@
-import 'missing-modules'
+import "missing-modules";
 
-console.log('missing test')
+console.log("missing test");

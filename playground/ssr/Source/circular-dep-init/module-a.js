@@ -1,1 +1,1 @@
-export const valueA = 'circ-dep-init-a'
+export const valueA = "circ-dep-init-a";

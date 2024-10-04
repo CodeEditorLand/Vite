@@ -1,1 +1,1 @@
-export const msg = `[success] alias to directory`
+export const msg = `[success] alias to directory`;

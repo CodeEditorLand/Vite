@@ -1,1 +1,1 @@
-document.querySelector('.import-expression').textContent += '[success]'
+document.querySelector(".import-expression").textContent += "[success]";

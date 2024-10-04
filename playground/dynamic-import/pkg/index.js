@@ -1,1 +1,1 @@
-import('./pkg.css')
+import("./pkg.css");

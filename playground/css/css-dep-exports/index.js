@@ -1,1 +1,1 @@
-throw new Error('should not be imported')
+throw new Error("should not be imported");

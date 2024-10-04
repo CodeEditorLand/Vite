@@ -1,1 +1,1 @@
-export const msg = '[success] custom condition'
+export const msg = "[success] custom condition";

@@ -1,1 +1,1 @@
-export const msg = 'single-quote'
+export const msg = "single-quote";

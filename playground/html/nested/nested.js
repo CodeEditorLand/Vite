@@ -1,4 +1,5 @@
-import { msg } from '../shared'
-import '../common.css'
+import { msg } from "../shared";
 
-console.log(msg + ' from nested')
+import "../common.css";
+
+console.log(msg + " from nested");

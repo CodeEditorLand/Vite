@@ -1,9 +1,9 @@
-import foo from './foo'
+import foo from "./foo";
 
 const asyncImport = async () => {
-  const { foo } = await import('./foo.js')
-  foo()
-}
+	const { foo } = await import("./foo.js");
+	foo();
+};
 
-foo()
-asyncImport()
+foo();
+asyncImport();

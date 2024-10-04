@@ -1,3 +1,3 @@
-import { sayHi } from '@vitejs/test-module-a'
+import { sayHi } from "@vitejs/test-module-a";
 
-document.getElementById('root').innerText = sayHi().msg
+document.getElementById("root").innerText = sayHi().msg;

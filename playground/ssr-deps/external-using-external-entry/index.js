@@ -1,7 +1,7 @@
-import getMessage from 'external-entry/entry'
+import getMessage from "external-entry/entry";
 
 export default {
-  hello() {
-    return getMessage()
-  },
-}
+	hello() {
+		return getMessage();
+	},
+};

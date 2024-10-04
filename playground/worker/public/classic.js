@@ -1,1 +1,1 @@
-self.constant = 'A classic'
+self.constant = "A classic";

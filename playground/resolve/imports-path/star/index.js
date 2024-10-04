@@ -1,1 +1,1 @@
-export const msg = '[success] subpath imports with star'
+export const msg = "[success] subpath imports with star";

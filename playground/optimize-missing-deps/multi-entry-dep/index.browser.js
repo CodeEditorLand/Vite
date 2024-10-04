@@ -1,1 +1,1 @@
-exports.name = 'Client'
+exports.name = "Client";

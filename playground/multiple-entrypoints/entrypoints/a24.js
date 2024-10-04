@@ -1,9 +1,9 @@
-export const that = () => import('./a23.js')
+export const that = () => import("./a23.js");
 
 export function other() {
-  return
+	return;
 }
 
 export default function () {
-  return 123
+	return 123;
 }

@@ -1,10 +1,10 @@
-import { stuckModuleExport } from './stuck-module'
-import { deadlockfuseModuleExport } from './deadlock-fuse-module'
+import { deadlockfuseModuleExport } from "./deadlock-fuse-module";
+import { stuckModuleExport } from "./stuck-module";
 
 /**
  * module H
  */
 export function commonModuleExport() {
-  stuckModuleExport()
-  deadlockfuseModuleExport()
+	stuckModuleExport();
+	deadlockfuseModuleExport();
 }

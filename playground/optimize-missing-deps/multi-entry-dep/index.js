@@ -1,3 +1,3 @@
-const path = require('node:path')
+const path = require("node:path");
 
-exports.name = path.normalize('./Server')
+exports.name = path.normalize("./Server");

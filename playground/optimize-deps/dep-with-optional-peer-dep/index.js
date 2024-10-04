@@ -1,7 +1,7 @@
 export function callItself() {
-  return '[success]'
+	return "[success]";
 }
 
 export async function callPeerDep() {
-  return await import('foobar')
+	return await import("foobar");
 }

@@ -1,1 +1,1 @@
-export default '[success] message from chunk.js'
+export default "[success] message from chunk.js";

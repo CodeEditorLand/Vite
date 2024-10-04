@@ -1,11 +1,11 @@
-import a24 from './a24'
+import a24 from "./a24";
 
-export const that = () => import('./a22.js')
+export const that = () => import("./a22.js");
 
 export function other() {
-  return a24()
+	return a24();
 }
 
 export default function () {
-  return 123
+	return 123;
 }

@@ -1,4 +1,5 @@
-import { createButton } from './base'
-import './async-1.css'
+import { createButton } from "./base";
 
-createButton('async-blue')
+import "./async-1.css";
+
+createButton("async-blue");

@@ -1,1 +1,1 @@
-export const msg = 'Qux view'
+export const msg = "Qux view";

@@ -1,3 +1,3 @@
-import './dynamic-foo.css'
+import "./dynamic-foo.css";
 
-console.log('dynamic/dynamic-foo')
+console.log("dynamic/dynamic-foo");

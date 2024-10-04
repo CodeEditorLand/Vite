@@ -1,5 +1,5 @@
-exports.stream = require('node:stream')
+exports.stream = require("node:stream");
 
 exports.hello = function () {
-  return 'Hello World!'
-}
+	return "Hello World!";
+};

@@ -1,1 +1,1 @@
-export default '[fail] should not load me'
+export default "[fail] should not load me";

@@ -1,3 +1,3 @@
-import { msg as depMsg } from '../dep'
+import { msg as depMsg } from "../dep";
 
-export const msg = `[success] out of root monorepo dep with ${depMsg}`
+export const msg = `[success] out of root monorepo dep with ${depMsg}`;

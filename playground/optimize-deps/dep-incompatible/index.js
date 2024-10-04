@@ -1,3 +1,3 @@
-const subUrl = new URL('./sub.js', import.meta.url)
+const subUrl = new URL("./sub.js", import.meta.url);
 
-export default () => import(subUrl)
+export default () => import(subUrl);

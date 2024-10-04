@@ -1,1 +1,1 @@
-export const self = 'dynamic-import-self-content'
+export const self = "dynamic-import-self-content";

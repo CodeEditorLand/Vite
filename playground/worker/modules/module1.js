@@ -1,1 +1,1 @@
-export const msg1 = 'module1'
+export const msg1 = "module1";

@@ -1,6 +1,6 @@
-'use strict'
-Object.defineProperty(exports, '__esModule', { value: true })
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 function foo() {
-  return 'foo'
+	return "foo";
 }
-exports.default = foo
+exports.default = foo;

@@ -1,1 +1,1 @@
-console.log('message from sideEffects script')
+console.log("message from sideEffects script");

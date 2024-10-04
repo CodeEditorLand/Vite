@@ -1,4 +1,5 @@
-import './foo.css'
-import barModuleClasses from './bar.module.css'
+import "./foo.css";
 
-export { barModuleClasses }
+import barModuleClasses from "./bar.module.css";
+
+export { barModuleClasses };

@@ -1,7 +1,7 @@
 var browserModuleField3 = (function () {
-  'use strict'
+	"use strict";
 
-  var main = '[fail] this should not run in the browser'
+	var main = "[fail] this should not run in the browser";
 
-  return main
-})()
+	return main;
+})();

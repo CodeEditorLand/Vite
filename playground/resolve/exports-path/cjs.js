@@ -1,1 +1,1 @@
-exports.msg = 'from cjs'
+exports.msg = "from cjs";

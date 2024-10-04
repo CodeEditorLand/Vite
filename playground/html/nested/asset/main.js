@@ -1,4 +1,4 @@
 function text(el, text) {
-  document.querySelector(el).textContent = text
+	document.querySelector(el).textContent = text;
 }
-text('.relative-js', 'hello')
+text(".relative-js", "hello");

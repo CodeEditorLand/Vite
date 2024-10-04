@@ -1,1 +1,1 @@
-export default 'browser.js'
+export default "browser.js";

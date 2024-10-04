@@ -1,3 +1,3 @@
-export const test = 'true'
+export const test = "true";
 
-import.meta.hot.accept()
+import.meta.hot.accept();

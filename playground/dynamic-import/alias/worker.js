@@ -1,5 +1,5 @@
 self.onmessage = (event) => {
-  self.postMessage({
-    msg: 'load worker',
-  })
-}
+	self.postMessage({
+		msg: "load worker",
+	});
+};

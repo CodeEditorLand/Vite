@@ -1,4 +1,5 @@
-import { n } from '../nested/shared'
-console.log('foo' + n)
+import { n } from "../nested/shared";
 
-export const msg = 'Foo view'
+console.log("foo" + n);
+
+export const msg = "Foo view";

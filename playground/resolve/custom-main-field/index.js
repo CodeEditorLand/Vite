@@ -1,1 +1,1 @@
-export const msg = '[fail]'
+export const msg = "[fail]";

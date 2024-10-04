@@ -1,3 +1,3 @@
-import { log } from './common'
+import { log } from "./common";
 
-log('dep1')
+log("dep1");

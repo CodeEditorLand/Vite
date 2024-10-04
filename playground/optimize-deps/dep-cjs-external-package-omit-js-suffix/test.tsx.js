@@ -1,5 +1,5 @@
 function tsx() {
-  return 'tsx'
+	return "tsx";
 }
 
-module.exports = { tsx }
+module.exports = { tsx };

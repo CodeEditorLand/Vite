@@ -1,4 +1,4 @@
 export function hi() {
-  return 'hi'
+	return "hi";
 }
-console.log('hi.js')
+console.log("hi.js");

@@ -1,1 +1,1 @@
-export const url = 'load url'
+export const url = "load url";

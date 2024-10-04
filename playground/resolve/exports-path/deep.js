@@ -1,1 +1,1 @@
-export const msg = '[success] deep resolve from exports'
+export const msg = "[success] deep resolve from exports";

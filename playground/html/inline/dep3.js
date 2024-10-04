@@ -1,4 +1,5 @@
-import './dep2'
-import { log } from './common'
+import "./dep2";
 
-log('dep3')
+import { log } from "./common";
+
+log("dep3");

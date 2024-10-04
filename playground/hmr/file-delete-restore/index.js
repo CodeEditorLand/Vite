@@ -1,4 +1,4 @@
-import { render } from './runtime'
-import { childValue, parentValue } from './parent'
+import { childValue, parentValue } from "./parent";
+import { render } from "./runtime";
 
-render({ parent: parentValue, child: childValue })
+render({ parent: parentValue, child: childValue });

@@ -1,9 +1,9 @@
-import { test } from './dep.js'
+import { test } from "./dep.js";
 
 function main() {
-  test()
+	test();
 }
 
-main()
+main();
 
-import.meta.hot.accept('./dep.js')
+import.meta.hot.accept("./dep.js");

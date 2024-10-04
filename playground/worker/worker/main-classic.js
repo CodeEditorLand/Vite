@@ -4,27 +4,27 @@ function text(el, text) {
 }
 
 let classicWorker = new Worker(
-  new URL('../classic-worker.js', import.meta.url) /* , */,
-  // test comment
-)
+	new URL("../classic-worker.js", import.meta.url) /* , */,
+	// test comment
+);
 
 // just test for case: ') ... ,' mean no worker options params
-classicWorker = new Worker(new URL('../classic-worker.js', import.meta.url))
+classicWorker = new Worker(new URL("../classic-worker.js", import.meta.url));
 
-classicWorker.addEventListener('message', ({ data }) => {
-  switch (data.message) {
-    case 'ping': {
-      text('.classic-worker', data.result)
-      break
-    }
-    case 'test-import': {
-      text('.classic-worker-import', data.result)
-      break
-    }
-  }
-})
-classicWorker.postMessage('ping')
-classicWorker.postMessage('test-import')
+classicWorker.addEventListener("message", ({ data }) => {
+	switch (data.message) {
+		case "ping": {
+			text(".classic-worker", data.result);
+			break;
+		}
+		case "test-import": {
+			text(".classic-worker-import", data.result);
+			break;
+		}
+	}
+});
+classicWorker.postMessage("ping");
+classicWorker.postMessage("test-import");
 
 // prettier-ignore
 // test trailing comma
@@ -34,7 +34,7 @@ const classicSharedWorker = new SharedWorker(
     type: 'classic'
   }, // test comment
 )
-classicSharedWorker.port.addEventListener('message', (ev) => {
-  text('.classic-shared-worker', JSON.stringify(ev.data))
-})
-classicSharedWorker.port.start()
+classicSharedWorker.port.addEventListener("message", (ev) => {
+	text(".classic-shared-worker", JSON.stringify(ev.data));
+});
+classicSharedWorker.port.start();

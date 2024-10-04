@@ -1,3 +1,3 @@
-import './sub.css'
+import "./sub.css";
 
-export default 'sub1-name'
+export default "sub1-name";

@@ -5,9 +5,9 @@
 // pass, e.g., a dependency that is aliased using an absolute
 // path, in which case it used to trigger unnecessary "full
 // reloads" invalidating all modules in a module graph.
-const cloneDeep = require('lodash/cloneDeep')
+const cloneDeep = require("lodash/cloneDeep");
 
 // no-op, using imported module for sake of completeness
 module.exports = cloneDeep({
-  message: 'From dep-alias-using-absolute-path',
-}).message
+	message: "From dep-alias-using-absolute-path",
+}).message;

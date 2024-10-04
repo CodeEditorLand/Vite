@@ -1,5 +1,5 @@
-'use strict'
+"use strict";
 function foo() {
-  return 'foo'
+	return "foo";
 }
-module.exports = foo
+module.exports = foo;

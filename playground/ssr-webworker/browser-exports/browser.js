@@ -1,1 +1,1 @@
-export default '[success] browser'
+export default "[success] browser";

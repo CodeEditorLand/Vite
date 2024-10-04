@@ -1,5 +1,5 @@
 export function getB() {
-  return '__B__'
+	return "__B__";
 }
 
-export { A } from './a'
+export { A } from "./a";

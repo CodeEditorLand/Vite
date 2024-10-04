@@ -1,1 +1,1 @@
-export const msg = 'Bar view'
+export const msg = "Bar view";

@@ -1,1 +1,1 @@
-document.querySelector('.relative-input').textContent = 'OK'
+document.querySelector(".relative-input").textContent = "OK";

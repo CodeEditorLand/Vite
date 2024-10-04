@@ -1,1 +1,1 @@
-export const msg = '[success] linked force include'
+export const msg = "[success] linked force include";

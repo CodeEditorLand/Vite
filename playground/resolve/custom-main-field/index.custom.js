@@ -1,1 +1,1 @@
-export const msg = '[success] custom main field'
+export const msg = "[success] custom main field";

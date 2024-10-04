@@ -1,1 +1,1 @@
-export default '[success] worker'
+export default "[success] worker";

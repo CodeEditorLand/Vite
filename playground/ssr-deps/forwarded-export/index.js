@@ -1,2 +1,2 @@
-const original = require('object-assigned-exports')
-module.exports = original
+const original = require("object-assigned-exports");
+module.exports = original;

@@ -1,5 +1,5 @@
 function scss() {
-  return 'scss'
+	return "scss";
 }
 
-module.exports = { scss }
+module.exports = { scss };

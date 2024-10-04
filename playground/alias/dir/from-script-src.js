@@ -1,2 +1,2 @@
-document.querySelector('.from-script-src').textContent =
-  '[success] from script src'
+document.querySelector(".from-script-src").textContent =
+	"[success] from script src";

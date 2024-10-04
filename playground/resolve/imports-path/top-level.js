@@ -1,1 +1,1 @@
-export const msg = '[success] top level subpath imports'
+export const msg = "[success] top level subpath imports";

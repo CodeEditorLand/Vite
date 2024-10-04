@@ -1,1 +1,1 @@
-export default 'edge.js'
+export default "edge.js";

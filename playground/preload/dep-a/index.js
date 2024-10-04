@@ -1,1 +1,1 @@
-export const msgFromA = 'From dep-a'
+export const msgFromA = "From dep-a";

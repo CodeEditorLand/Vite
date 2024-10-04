@@ -1,9 +1,9 @@
-import { value } from './child'
+import { value } from "./child";
 
 if (import.meta.hot) {
-  import.meta.hot.accept()
+	import.meta.hot.accept();
 }
 
-log('(invalidation) parent is executing')
+log("(invalidation) parent is executing");
 
-globalThis.__HMR__['.invalidation'] = value
+globalThis.__HMR__[".invalidation"] = value;

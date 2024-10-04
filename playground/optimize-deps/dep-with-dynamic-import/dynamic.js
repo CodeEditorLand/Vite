@@ -1,1 +1,1 @@
-export const foo = '[success] dependency with dynamic import'
+export const foo = "[success] dependency with dynamic import";
