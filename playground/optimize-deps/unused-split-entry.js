@@ -1,4 +1,4 @@
-import msg from '@vitejs/test-added-in-entries'
+import msg from "@vitejs/test-added-in-entries";
 
 // This is an entry file that is added to optimizeDeps.entries
 // When the deps aren't cached, these entries are also processed
@@ -8,4 +8,4 @@ import msg from '@vitejs/test-added-in-entries'
 // of extra processing on cold start. Another option is to add
 // the missing dependencies to optimizeDeps.include directly
 
-console.log(msg)
+console.log(msg);

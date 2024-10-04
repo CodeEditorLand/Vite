@@ -1,1 +1,1 @@
-self.postMessage('Hello from simple worker!')
+self.postMessage("Hello from simple worker!");

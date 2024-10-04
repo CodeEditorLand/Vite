@@ -1,1 +1,1 @@
-export default '[success] drive relative'
+export default "[success] drive relative";

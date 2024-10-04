@@ -1,5 +1,5 @@
-import './from-js.css'
+import "./from-js.css";
 
-document.querySelector('.js').textContent = 'js: ok'
+document.querySelector(".js").textContent = "js: ok";
 
-import('./dynamic.js')
+import("./dynamic.js");

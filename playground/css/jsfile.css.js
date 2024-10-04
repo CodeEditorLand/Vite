@@ -1,2 +1,2 @@
-const message = 'from jsfile.css.js'
-export default message
+const message = "from jsfile.css.js";
+export default message;

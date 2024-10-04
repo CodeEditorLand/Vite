@@ -1,8 +1,9 @@
-import './test.css'
-import { msg } from 'minified-module'
+import "./test.css";
 
-console.log(msg)
+import { msg } from "minified-module";
+
+console.log(msg);
 
 if (window) {
-  console.log('hello world')
+	console.log("hello world");
 }

@@ -1,5 +1,5 @@
-import { module } from './module'
+import { module } from "./module";
 
 self.onmessage = () => {
-  self.postMessage(module)
-}
+	self.postMessage(module);
+};

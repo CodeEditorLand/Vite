@@ -1,1 +1,1 @@
-console.log('vite cli works!')
+console.log("vite cli works!");

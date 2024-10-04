@@ -1,8 +1,8 @@
-import constant from './modules/module0'
+import constant from "./modules/module0";
 
-self.postMessage(constant)
+self.postMessage(constant);
 
-export const module = 'module and worker'
+export const module = "module and worker";
 
 // for sourcemap
-console.log('module-and-worker.js')
+console.log("module-and-worker.js");

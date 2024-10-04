@@ -1,1 +1,1 @@
-export const msg = 'dep from upper directory'
+export const msg = "dep from upper directory";

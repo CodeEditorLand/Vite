@@ -1,5 +1,5 @@
-import { msg } from './nested/foo'
+import { msg } from "./nested/foo";
 
-export const fullmsg = msg + 'bar'
+export const fullmsg = msg + "bar";
 
-document.querySelector('.nested-entry').textContent = fullmsg
+document.querySelector(".nested-entry").textContent = fullmsg;

@@ -1,1 +1,1 @@
-export const msg = `[success] alias to fs path`
+export const msg = `[success] alias to fs path`;

@@ -1,1 +1,1 @@
-document.querySelector('main').innerHTML = '👋'
+document.querySelector("main").innerHTML = "👋";

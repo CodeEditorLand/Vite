@@ -1,1 +1,1 @@
-export const msg = `[success] alias to custom-resolver path`
+export const msg = `[success] alias to custom-resolver path`;

@@ -1,8 +1,8 @@
 self.onmessage = (event) => {
-  if (event.data === 'ping') {
-    self.postMessage(`pong ${self.location.href}`)
-  }
-}
+	if (event.data === "ping") {
+		self.postMessage(`pong ${self.location.href}`);
+	}
+};
 
 // for sourcemap
-console.log('sub-worker.js')
+console.log("sub-worker.js");

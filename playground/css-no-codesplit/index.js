@@ -1,1 +1,1 @@
-import('./async-js')
+import("./async-js");

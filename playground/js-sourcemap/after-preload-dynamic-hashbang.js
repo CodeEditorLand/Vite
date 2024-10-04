@@ -1,5 +1,5 @@
 // hashbang is injected via rollupOptions.output.banner
 
-import('./dynamic/dynamic-foo')
+import("./dynamic/dynamic-foo");
 
-console.log('after preload dynamic hashbang')
+console.log("after preload dynamic hashbang");

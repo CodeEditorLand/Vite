@@ -1,42 +1,42 @@
 // test importing both default and named exports from a CommonJS module
 // React is the ultimate test of this because its dynamic exports assignments
 // are not statically detectable by @rollup/plugin-commonjs.
-import React, { useState } from 'react'
-import ReactDOM from 'react-dom/client'
-import { Socket } from 'phoenix'
-import clip from 'clipboard'
+import clip from "clipboard";
+import { Socket } from "phoenix";
+import React, { useState } from "react";
+import ReactDOM from "react-dom/client";
 
 // Test exporting a name that was already imported
-export { useState } from 'react'
-export { useState as anotherNameForUseState } from 'react'
-export { default as React } from 'react'
+export { useState } from "react";
+export { useState as anotherNameForUseState } from "react";
+export { default as React } from "react";
 
-if (typeof clip === 'function') {
-  text('.cjs-clipboard', 'ok')
+if (typeof clip === "function") {
+	text(".cjs-clipboard", "ok");
 }
 
-if (typeof Socket === 'function') {
-  text('.cjs-phoenix', 'ok')
+if (typeof Socket === "function") {
+	text(".cjs-phoenix", "ok");
 }
 
 function App() {
-  const [count, setCount] = useState(0)
+	const [count, setCount] = useState(0);
 
-  return React.createElement(
-    'button',
-    {
-      onClick() {
-        setCount(count + 1)
-      },
-    },
-    `count is ${count}`,
-  )
+	return React.createElement(
+		"button",
+		{
+			onClick() {
+				setCount(count + 1);
+			},
+		},
+		`count is ${count}`,
+	);
 }
 
-ReactDOM.createRoot(document.querySelector('.cjs')).render(
-  React.createElement(App),
-)
+ReactDOM.createRoot(document.querySelector(".cjs")).render(
+	React.createElement(App),
+);
 
 function text(el, text) {
-  document.querySelector(el).textContent = text
+	document.querySelector(el).textContent = text;
 }

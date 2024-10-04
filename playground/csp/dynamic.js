@@ -1,3 +1,3 @@
-import './dynamic.css'
+import "./dynamic.css";
 
-document.querySelector('.dynamic-js').textContent = 'dynamic-js: ok'
+document.querySelector(".dynamic-js").textContent = "dynamic-js: ok";

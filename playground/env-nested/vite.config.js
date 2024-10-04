@@ -1,5 +1,5 @@
-import { defineConfig } from 'vite'
+import { defineConfig } from "vite";
 
 export default defineConfig({
-  envDir: './envs',
-})
+	envDir: "./envs",
+});

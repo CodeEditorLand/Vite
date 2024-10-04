@@ -1,11 +1,11 @@
-import { defineConfig } from 'vite'
+import { defineConfig } from "vite";
 
 export default defineConfig({
-  css: {
-    transformer: 'lightningcss',
-  },
-  build: {
-    cssTarget: ['chrome61'],
-    cssMinify: 'lightningcss',
-  },
-})
+	css: {
+		transformer: "lightningcss",
+	},
+	build: {
+		cssTarget: ["chrome61"],
+		cssMinify: "lightningcss",
+	},
+});

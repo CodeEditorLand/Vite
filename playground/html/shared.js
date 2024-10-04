@@ -1,1 +1,1 @@
-export const msg = 'shared'
+export const msg = "shared";

@@ -1,3 +1,3 @@
-import { sayName } from '@vitejs/test-missing-dep'
+import { sayName } from "@vitejs/test-missing-dep";
 
-export const name = sayName()
+export const name = sayName();

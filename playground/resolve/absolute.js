@@ -1,1 +1,1 @@
-export default '[success] absolute'
+export default "[success] absolute";

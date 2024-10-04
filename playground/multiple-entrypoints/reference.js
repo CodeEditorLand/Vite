@@ -1,3 +1,3 @@
-import './reference.scss'
+import "./reference.scss";
 
-document.querySelector('.content').textContent = 'Reference'
+document.querySelector(".content").textContent = "Reference";

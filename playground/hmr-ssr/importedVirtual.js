@@ -1,1 +1,1 @@
-export const virtual = '[success]'
+export const virtual = "[success]";

@@ -1,1 +1,1 @@
-export const isSelfReference = true
+export const isSelfReference = true;

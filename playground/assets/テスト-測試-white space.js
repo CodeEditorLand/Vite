@@ -1,1 +1,1 @@
-console.log('test Unicode')
+console.log("test Unicode");

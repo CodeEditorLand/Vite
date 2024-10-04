@@ -1,4 +1,5 @@
-import init from './add.wasm?init'
+import init from "./add.wasm?init";
+
 init().then(({ exports }) => {
-  self.postMessage({ result: exports.add(1, 2) })
-})
+	self.postMessage({ result: exports.add(1, 2) });
+});
