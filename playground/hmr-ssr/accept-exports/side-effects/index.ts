@@ -1,1 +1,1 @@
-import './side-effects.ts'
+import "./side-effects.ts";

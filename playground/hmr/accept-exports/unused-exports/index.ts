@@ -1,4 +1,5 @@
-import './unused'
-import { foo } from './used'
+import "./unused";
 
-console.log('used:' + foo)
+import { foo } from "./used";
+
+console.log("used:" + foo);

@@ -27,26 +27,26 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-import type { PluginHooks } from 'rollup'
+import type { PluginHooks } from "rollup";
 
 export interface Alias {
-  find: string | RegExp
-  replacement: string
-  /**
-   * Instructs the plugin to use an alternative resolving algorithm,
-   * rather than the Rollup's resolver.
-   * @default null
-   */
-  customResolver?: ResolverFunction | ResolverObject | null
+	find: string | RegExp;
+	replacement: string;
+	/**
+	 * Instructs the plugin to use an alternative resolving algorithm,
+	 * rather than the Rollup's resolver.
+	 * @default null
+	 */
+	customResolver?: ResolverFunction | ResolverObject | null;
 }
 
-export type MapToFunction<T> = T extends Function ? T : never
+export type MapToFunction<T> = T extends Function ? T : never;
 
-export type ResolverFunction = MapToFunction<PluginHooks['resolveId']>
+export type ResolverFunction = MapToFunction<PluginHooks["resolveId"]>;
 
 export interface ResolverObject {
-  buildStart?: PluginHooks['buildStart']
-  resolveId: ResolverFunction
+	buildStart?: PluginHooks["buildStart"];
+	resolveId: ResolverFunction;
 }
 
 /**
@@ -58,4 +58,4 @@ export interface ResolverObject {
  * This is passed to \@rollup/plugin-alias as the "entries" field
  * https://github.com/rollup/plugins/tree/master/packages/alias#entries
  */
-export type AliasOptions = readonly Alias[] | { [find: string]: string }
+export type AliasOptions = readonly Alias[] | { [find: string]: string };

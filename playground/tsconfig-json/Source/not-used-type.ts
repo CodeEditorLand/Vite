@@ -1,3 +1,3 @@
-console.log('main side effect')
+console.log("main side effect");
 
 export class MainTypeOnlyClass {}

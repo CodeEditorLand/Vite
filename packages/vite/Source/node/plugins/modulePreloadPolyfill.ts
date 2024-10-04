@@ -1,34 +1,34 @@
-import type { ResolvedConfig } from '..'
-import type { Plugin } from '../plugin'
-import { isModernFlag } from './importAnalysisBuild'
+import type { ResolvedConfig } from "..";
+import type { Plugin } from "../plugin";
+import { isModernFlag } from "./importAnalysisBuild";
 
-export const modulePreloadPolyfillId = 'vite/modulepreload-polyfill'
-const resolvedModulePreloadPolyfillId = '\0' + modulePreloadPolyfillId + '.js'
+export const modulePreloadPolyfillId = "vite/modulepreload-polyfill";
+const resolvedModulePreloadPolyfillId = "\0" + modulePreloadPolyfillId + ".js";
 
 export function modulePreloadPolyfillPlugin(config: ResolvedConfig): Plugin {
-  // `isModernFlag` is only available during build since it is resolved by `vite:build-import-analysis`
-  const skip = config.command !== 'build' || config.build.ssr
-  let polyfillString: string | undefined
+	// `isModernFlag` is only available during build since it is resolved by `vite:build-import-analysis`
+	const skip = config.command !== "build" || config.build.ssr;
+	let polyfillString: string | undefined;
 
-  return {
-    name: 'vite:modulepreload-polyfill',
-    resolveId(id) {
-      if (id === modulePreloadPolyfillId) {
-        return resolvedModulePreloadPolyfillId
-      }
-    },
-    load(id) {
-      if (id === resolvedModulePreloadPolyfillId) {
-        if (skip) {
-          return ''
-        }
-        if (!polyfillString) {
-          polyfillString = `${isModernFlag}&&(${polyfill.toString()}());`
-        }
-        return { code: polyfillString, moduleSideEffects: true }
-      }
-    },
-  }
+	return {
+		name: "vite:modulepreload-polyfill",
+		resolveId(id) {
+			if (id === modulePreloadPolyfillId) {
+				return resolvedModulePreloadPolyfillId;
+			}
+		},
+		load(id) {
+			if (id === resolvedModulePreloadPolyfillId) {
+				if (skip) {
+					return "";
+				}
+				if (!polyfillString) {
+					polyfillString = `${isModernFlag}&&(${polyfill.toString()}());`;
+				}
+				return { code: polyfillString, moduleSideEffects: true };
+			}
+		},
+	};
 }
 
 /**
@@ -52,50 +52,51 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 */
 
-declare const document: any
-declare const MutationObserver: any
-declare const fetch: any
+declare const document: any;
+declare const MutationObserver: any;
+declare const fetch: any;
 
 function polyfill() {
-  const relList = document.createElement('link').relList
-  if (relList && relList.supports && relList.supports('modulepreload')) {
-    return
-  }
+	const relList = document.createElement("link").relList;
+	if (relList && relList.supports && relList.supports("modulepreload")) {
+		return;
+	}
 
-  for (const link of document.querySelectorAll('link[rel="modulepreload"]')) {
-    processPreload(link)
-  }
+	for (const link of document.querySelectorAll('link[rel="modulepreload"]')) {
+		processPreload(link);
+	}
 
-  new MutationObserver((mutations: any) => {
-    for (const mutation of mutations) {
-      if (mutation.type !== 'childList') {
-        continue
-      }
-      for (const node of mutation.addedNodes) {
-        if (node.tagName === 'LINK' && node.rel === 'modulepreload')
-          processPreload(node)
-      }
-    }
-  }).observe(document, { childList: true, subtree: true })
+	new MutationObserver((mutations: any) => {
+		for (const mutation of mutations) {
+			if (mutation.type !== "childList") {
+				continue;
+			}
+			for (const node of mutation.addedNodes) {
+				if (node.tagName === "LINK" && node.rel === "modulepreload")
+					processPreload(node);
+			}
+		}
+	}).observe(document, { childList: true, subtree: true });
 
-  function getFetchOpts(link: any) {
-    const fetchOpts = {} as any
-    if (link.integrity) fetchOpts.integrity = link.integrity
-    if (link.referrerPolicy) fetchOpts.referrerPolicy = link.referrerPolicy
-    if (link.crossOrigin === 'use-credentials')
-      fetchOpts.credentials = 'include'
-    else if (link.crossOrigin === 'anonymous') fetchOpts.credentials = 'omit'
-    else fetchOpts.credentials = 'same-origin'
-    return fetchOpts
-  }
+	function getFetchOpts(link: any) {
+		const fetchOpts = {} as any;
+		if (link.integrity) fetchOpts.integrity = link.integrity;
+		if (link.referrerPolicy) fetchOpts.referrerPolicy = link.referrerPolicy;
+		if (link.crossOrigin === "use-credentials")
+			fetchOpts.credentials = "include";
+		else if (link.crossOrigin === "anonymous")
+			fetchOpts.credentials = "omit";
+		else fetchOpts.credentials = "same-origin";
+		return fetchOpts;
+	}
 
-  function processPreload(link: any) {
-    if (link.ep)
-      // ep marker = processed
-      return
-    link.ep = true
-    // prepopulate the load record
-    const fetchOpts = getFetchOpts(link)
-    fetch(link.href, fetchOpts)
-  }
+	function processPreload(link: any) {
+		if (link.ep)
+			// ep marker = processed
+			return;
+		link.ep = true;
+		// prepopulate the load record
+		const fetchOpts = getFetchOpts(link);
+		fetch(link.href, fetchOpts);
+	}
 }

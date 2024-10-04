@@ -1,4 +1,4 @@
 // This file is never loaded
 if (import.meta.hot) {
-  import.meta.hot.accept(() => {})
+	import.meta.hot.accept(() => {});
 }

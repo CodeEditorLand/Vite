@@ -1,12 +1,12 @@
-const btn = document.querySelector('button')
-let count = 0
+const btn = document.querySelector("button");
+let count = 0;
 const update = () => {
-  btn.textContent = `Counter ${count}`
-}
+	btn.textContent = `Counter ${count}`;
+};
 btn.onclick = () => {
-  count++
-  update()
-}
+	count++;
+	update();
+};
 function neverCalled() {
-  import('./dep')
+	import("./dep");
 }

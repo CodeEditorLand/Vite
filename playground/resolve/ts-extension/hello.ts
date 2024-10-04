@@ -1,1 +1,1 @@
-export const msg = '[success] use .js extension to import a ts module'
+export const msg = "[success] use .js extension to import a ts module";

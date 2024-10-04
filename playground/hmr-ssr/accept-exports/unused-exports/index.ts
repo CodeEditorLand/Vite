@@ -1,4 +1,5 @@
-import './unused'
-import { foo } from './used'
+import "./unused";
 
-log('used:' + foo)
+import { foo } from "./used";
+
+log("used:" + foo);

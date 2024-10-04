@@ -1,3 +1,3 @@
-console.log('nested side effect')
+console.log("nested side effect");
 
 export class NestedTypeOnlyClass {}

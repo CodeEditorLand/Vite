@@ -4,7 +4,7 @@
 // The server is started in the test, so we need to have a custom serve
 // function or a default server will be created
 export async function serve(): Promise<{ close(): Promise<void> }> {
-  return {
-    close: () => Promise.resolve(),
-  }
+	return {
+		close: () => Promise.resolve(),
+	};
 }

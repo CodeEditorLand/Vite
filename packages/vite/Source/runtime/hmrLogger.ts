@@ -1,8 +1,8 @@
-import type { HMRLogger } from '../shared/hmr'
+import type { HMRLogger } from "../shared/hmr";
 
-const noop = (): void => {}
+const noop = (): void => {};
 
 export const silentConsole: HMRLogger = {
-  debug: noop,
-  error: noop,
-}
+	debug: noop,
+	error: noop,
+};

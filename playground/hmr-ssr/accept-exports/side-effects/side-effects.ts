@@ -1,13 +1,13 @@
-export const x = 'x'
+export const x = "x";
 
-export const y = 'y'
+export const y = "y";
 
-export default 'z'
+export default "z";
 
-log('>>> side FX')
+log(">>> side FX");
 
-globalThis.__HMR__['.app'] = 'hey'
+globalThis.__HMR__[".app"] = "hey";
 
 if (import.meta.hot) {
-  import.meta.hot.acceptExports(['default'])
+	import.meta.hot.acceptExports(["default"]);
 }

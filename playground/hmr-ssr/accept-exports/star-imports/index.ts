@@ -1,1 +1,1 @@
-import './star-imports.ts'
+import "./star-imports.ts";

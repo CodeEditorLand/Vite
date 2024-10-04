@@ -1,4 +1,4 @@
-import { a } from './named'
-import def from './default'
+import def from "./default";
+import { a } from "./named";
 
-console.log(`>>>>>> ${a} ${def}`)
+console.log(`>>>>>> ${a} ${def}`);

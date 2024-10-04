@@ -1,1 +1,1 @@
-import './dynamic-imports.ts'
+import "./dynamic-imports.ts";

@@ -1,24 +1,24 @@
-import type { ErrorPayload } from 'types/hmrPayload'
+import type { ErrorPayload } from "types/hmrPayload";
 
 // injected by the hmr plugin when served
-declare const __BASE__: string
-declare const __HMR_CONFIG_NAME__: string
+declare const __BASE__: string;
+declare const __HMR_CONFIG_NAME__: string;
 
-const hmrConfigName = __HMR_CONFIG_NAME__
-const base = __BASE__ || '/'
+const hmrConfigName = __HMR_CONFIG_NAME__;
+const base = __BASE__ || "/";
 
 // Create an element with provided attributes and optional children
 function h(
-  e: string,
-  attrs: Record<string, string> = {},
-  ...children: (string | Node)[]
+	e: string,
+	attrs: Record<string, string> = {},
+	...children: (string | Node)[]
 ) {
-  const elem = document.createElement(e)
-  for (const [k, v] of Object.entries(attrs)) {
-    elem.setAttribute(k, v)
-  }
-  elem.append(...children)
-  return elem
+	const elem = document.createElement(e);
+	for (const [k, v] of Object.entries(attrs)) {
+		elem.setAttribute(k, v);
+	}
+	elem.append(...children);
+	return elem;
 }
 
 // set :host styles to make playwright detect the element as visible
@@ -162,136 +162,140 @@ kbd {
   border-color: rgb(54, 57, 64);
   border-image: initial;
 }
-`
+`;
 
 // Error Template
 const createTemplate = () =>
-  h(
-    'div',
-    { class: 'backdrop', part: 'backdrop' },
-    h(
-      'div',
-      { class: 'window', part: 'window' },
-      h(
-        'pre',
-        { class: 'message', part: 'message' },
-        h('span', { class: 'plugin', part: 'plugin' }),
-        h('span', { class: 'message-body', part: 'message-body' }),
-      ),
-      h('pre', { class: 'file', part: 'file' }),
-      h('pre', { class: 'frame', part: 'frame' }),
-      h('pre', { class: 'stack', part: 'stack' }),
-      h(
-        'div',
-        { class: 'tip', part: 'tip' },
-        'Click outside, press ',
-        h('kbd', {}, 'Esc'),
-        ' key, or fix the code to dismiss.',
-        h('br'),
-        'You can also disable this overlay by setting ',
-        h('code', { part: 'config-option-name' }, 'server.hmr.overlay'),
-        ' to ',
-        h('code', { part: 'config-option-value' }, 'false'),
-        ' in ',
-        h('code', { part: 'config-file-name' }, hmrConfigName),
-        '.',
-      ),
-    ),
-    h('style', {}, templateStyle),
-  )
+	h(
+		"div",
+		{ class: "backdrop", part: "backdrop" },
+		h(
+			"div",
+			{ class: "window", part: "window" },
+			h(
+				"pre",
+				{ class: "message", part: "message" },
+				h("span", { class: "plugin", part: "plugin" }),
+				h("span", { class: "message-body", part: "message-body" }),
+			),
+			h("pre", { class: "file", part: "file" }),
+			h("pre", { class: "frame", part: "frame" }),
+			h("pre", { class: "stack", part: "stack" }),
+			h(
+				"div",
+				{ class: "tip", part: "tip" },
+				"Click outside, press ",
+				h("kbd", {}, "Esc"),
+				" key, or fix the code to dismiss.",
+				h("br"),
+				"You can also disable this overlay by setting ",
+				h("code", { part: "config-option-name" }, "server.hmr.overlay"),
+				" to ",
+				h("code", { part: "config-option-value" }, "false"),
+				" in ",
+				h("code", { part: "config-file-name" }, hmrConfigName),
+				".",
+			),
+		),
+		h("style", {}, templateStyle),
+	);
 
-const fileRE = /(?:[a-zA-Z]:\\|\/).*?:\d+:\d+/g
-const codeframeRE = /^(?:>?\s*\d+\s+\|.*|\s+\|\s*\^.*)\r?\n/gm
+const fileRE = /(?:[a-zA-Z]:\\|\/).*?:\d+:\d+/g;
+const codeframeRE = /^(?:>?\s*\d+\s+\|.*|\s+\|\s*\^.*)\r?\n/gm;
 
 // Allow `ErrorOverlay` to extend `HTMLElement` even in environments where
 // `HTMLElement` was not originally defined.
-const { HTMLElement = class {} as typeof globalThis.HTMLElement } = globalThis
+const { HTMLElement = class {} as typeof globalThis.HTMLElement } = globalThis;
 export class ErrorOverlay extends HTMLElement {
-  root: ShadowRoot
-  closeOnEsc: (e: KeyboardEvent) => void
+	root: ShadowRoot;
+	closeOnEsc: (e: KeyboardEvent) => void;
 
-  constructor(err: ErrorPayload['err'], links = true) {
-    super()
-    this.root = this.attachShadow({ mode: 'open' })
-    this.root.appendChild(createTemplate())
+	constructor(err: ErrorPayload["err"], links = true) {
+		super();
+		this.root = this.attachShadow({ mode: "open" });
+		this.root.appendChild(createTemplate());
 
-    codeframeRE.lastIndex = 0
-    const hasFrame = err.frame && codeframeRE.test(err.frame)
-    const message = hasFrame
-      ? err.message.replace(codeframeRE, '')
-      : err.message
-    if (err.plugin) {
-      this.text('.plugin', `[plugin:${err.plugin}] `)
-    }
-    this.text('.message-body', message.trim())
+		codeframeRE.lastIndex = 0;
+		const hasFrame = err.frame && codeframeRE.test(err.frame);
+		const message = hasFrame
+			? err.message.replace(codeframeRE, "")
+			: err.message;
+		if (err.plugin) {
+			this.text(".plugin", `[plugin:${err.plugin}] `);
+		}
+		this.text(".message-body", message.trim());
 
-    const [file] = (err.loc?.file || err.id || 'unknown file').split(`?`)
-    if (err.loc) {
-      this.text('.file', `${file}:${err.loc.line}:${err.loc.column}`, links)
-    } else if (err.id) {
-      this.text('.file', file)
-    }
+		const [file] = (err.loc?.file || err.id || "unknown file").split(`?`);
+		if (err.loc) {
+			this.text(
+				".file",
+				`${file}:${err.loc.line}:${err.loc.column}`,
+				links,
+			);
+		} else if (err.id) {
+			this.text(".file", file);
+		}
 
-    if (hasFrame) {
-      this.text('.frame', err.frame!.trim())
-    }
-    this.text('.stack', err.stack, links)
+		if (hasFrame) {
+			this.text(".frame", err.frame!.trim());
+		}
+		this.text(".stack", err.stack, links);
 
-    this.root.querySelector('.window')!.addEventListener('click', (e) => {
-      e.stopPropagation()
-    })
+		this.root.querySelector(".window")!.addEventListener("click", (e) => {
+			e.stopPropagation();
+		});
 
-    this.addEventListener('click', () => {
-      this.close()
-    })
+		this.addEventListener("click", () => {
+			this.close();
+		});
 
-    this.closeOnEsc = (e: KeyboardEvent) => {
-      if (e.key === 'Escape' || e.code === 'Escape') {
-        this.close()
-      }
-    }
+		this.closeOnEsc = (e: KeyboardEvent) => {
+			if (e.key === "Escape" || e.code === "Escape") {
+				this.close();
+			}
+		};
 
-    document.addEventListener('keydown', this.closeOnEsc)
-  }
+		document.addEventListener("keydown", this.closeOnEsc);
+	}
 
-  text(selector: string, text: string, linkFiles = false): void {
-    const el = this.root.querySelector(selector)!
-    if (!linkFiles) {
-      el.textContent = text
-    } else {
-      let curIndex = 0
-      let match: RegExpExecArray | null
-      fileRE.lastIndex = 0
-      while ((match = fileRE.exec(text))) {
-        const { 0: file, index } = match
-        if (index != null) {
-          const frag = text.slice(curIndex, index)
-          el.appendChild(document.createTextNode(frag))
-          const link = document.createElement('a')
-          link.textContent = file
-          link.className = 'file-link'
-          link.onclick = () => {
-            fetch(
-              new URL(
-                `${base}__open-in-editor?file=${encodeURIComponent(file)}`,
-                import.meta.url,
-              ),
-            )
-          }
-          el.appendChild(link)
-          curIndex += frag.length + file.length
-        }
-      }
-    }
-  }
-  close(): void {
-    this.parentNode?.removeChild(this)
-    document.removeEventListener('keydown', this.closeOnEsc)
-  }
+	text(selector: string, text: string, linkFiles = false): void {
+		const el = this.root.querySelector(selector)!;
+		if (!linkFiles) {
+			el.textContent = text;
+		} else {
+			let curIndex = 0;
+			let match: RegExpExecArray | null;
+			fileRE.lastIndex = 0;
+			while ((match = fileRE.exec(text))) {
+				const { 0: file, index } = match;
+				if (index != null) {
+					const frag = text.slice(curIndex, index);
+					el.appendChild(document.createTextNode(frag));
+					const link = document.createElement("a");
+					link.textContent = file;
+					link.className = "file-link";
+					link.onclick = () => {
+						fetch(
+							new URL(
+								`${base}__open-in-editor?file=${encodeURIComponent(file)}`,
+								import.meta.url,
+							),
+						);
+					};
+					el.appendChild(link);
+					curIndex += frag.length + file.length;
+				}
+			}
+		}
+	}
+	close(): void {
+		this.parentNode?.removeChild(this);
+		document.removeEventListener("keydown", this.closeOnEsc);
+	}
 }
 
-export const overlayId = 'vite-error-overlay'
-const { customElements } = globalThis // Ensure `customElements` is defined before the next line.
+export const overlayId = "vite-error-overlay";
+const { customElements } = globalThis; // Ensure `customElements` is defined before the next line.
 if (customElements && !customElements.get(overlayId)) {
-  customElements.define(overlayId, ErrorOverlay)
+	customElements.define(overlayId, ErrorOverlay);
 }

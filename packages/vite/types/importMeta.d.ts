@@ -3,20 +3,20 @@
 // <https://www.typescriptlang.org/docs/handbook/declaration-merging.html#module-augmentation>
 
 interface ImportMetaEnv {
-  [key: string]: any
-  BASE_URL: string
-  MODE: string
-  DEV: boolean
-  PROD: boolean
-  SSR: boolean
+	[key: string]: any;
+	BASE_URL: string;
+	MODE: string;
+	DEV: boolean;
+	PROD: boolean;
+	SSR: boolean;
 }
 
 interface ImportMeta {
-  url: string
+	url: string;
 
-  readonly hot?: import('./hot').ViteHotContext
+	readonly hot?: import("./hot").ViteHotContext;
 
-  readonly env: ImportMetaEnv
+	readonly env: ImportMetaEnv;
 
-  glob: import('./importGlob').ImportGlobFunction
+	glob: import("./importGlob").ImportGlobFunction;
 }

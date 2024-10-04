@@ -1,5 +1,5 @@
-import { a } from './accept-named'
+import { a } from "./accept-named";
 
-log('accept-named:' + a)
+log("accept-named:" + a);
 
-log('>>> ready')
+log(">>> ready");

@@ -1,3 +1,3 @@
-declare module 'virtual:file' {
-  export const virtual: string
+declare module "virtual:file" {
+	export const virtual: string;
 }

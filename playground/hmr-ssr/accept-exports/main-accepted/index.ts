@@ -1,1 +1,1 @@
-import './main-accepted'
+import "./main-accepted";

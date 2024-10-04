@@ -1,1 +1,1 @@
-import './main-non-accepted.ts'
+import "./main-non-accepted.ts";

@@ -1,19 +1,20 @@
-import 'vite/modulepreload-polyfill'
-import cssUrl from '../styles/url.css?url'
+import "vite/modulepreload-polyfill";
 
-const cssLink = document.createElement('link')
-cssLink.rel = 'stylesheet'
-cssLink.href = cssUrl
-document.querySelector('head').prepend(cssLink)
+import cssUrl from "../styles/url.css?url";
 
-export const colorClass = 'text-black'
+const cssLink = document.createElement("link");
+cssLink.rel = "stylesheet";
+cssLink.href = cssUrl;
+document.querySelector("head").prepend(cssLink);
+
+export const colorClass = "text-black";
 
 export function colorHeading() {
-  document.querySelector('h1').className = colorClass
+	document.querySelector("h1").className = colorClass;
 }
 
-colorHeading()
+colorHeading();
 
 if (import.meta.hot) {
-  import.meta.hot.accept()
+	import.meta.hot.accept();
 }

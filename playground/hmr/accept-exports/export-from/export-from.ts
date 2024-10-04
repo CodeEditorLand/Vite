@@ -1,8 +1,8 @@
-import { a } from './hub'
+import { a } from "./hub";
 
-console.log(a)
+console.log(a);
 
 if (import.meta.hot) {
-  import.meta.hot.accept()
+	import.meta.hot.accept();
 } else {
 }

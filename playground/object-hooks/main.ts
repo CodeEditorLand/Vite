@@ -1,2 +1,2 @@
-const app = document.getElementById('transform')
-app.innerText = '__TRANSFORM__'
+const app = document.getElementById("transform");
+app.innerText = "__TRANSFORM__";

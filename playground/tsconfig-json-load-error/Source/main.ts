@@ -1,2 +1,2 @@
 // @ts-nocheck
-import '../has-error/main'
+import "../has-error/main";

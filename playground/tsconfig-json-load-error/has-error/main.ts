@@ -1,1 +1,1 @@
-console.log('tsconfig error fixed, file loaded')
+console.log("tsconfig error fixed, file loaded");
