@@ -1,21 +1,20 @@
-export { msg } from './foo.js'
-
 // test importing node built-ins
-import fs from 'node:fs'
-
-import { useState } from 'react'
-
-export function useCount() {
-  return useState(0)
-}
+import fs from "node:fs";
+import { useState } from "react";
 
 // test dep with css/asset imports
-import './test.css'
+import "./test.css";
 
-if (false) {
-  fs.readFileSync()
-} else {
-  console.log('ok')
+export { msg } from "./foo.js";
+
+export function useCount() {
+	return useState(0);
 }
 
-export { default as VueSFC } from './Test.vue'
+if (false) {
+	fs.readFileSync();
+} else {
+	console.log("ok");
+}
+
+export { default as VueSFC } from "./Test.vue";

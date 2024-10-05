@@ -1,1 +1,1 @@
-export const msg = '[success] exports env (browser.mjs)'
+export const msg = "[success] exports env (browser.mjs)";

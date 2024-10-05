@@ -1,1 +1,1 @@
-export default 'module condition'
+export default "module condition";

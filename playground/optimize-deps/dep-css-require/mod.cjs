@@ -1,2 +1,2 @@
-const style = require('./mod.module.css')
-module.exports = style
+const style = require("./mod.module.css");
+module.exports = style;

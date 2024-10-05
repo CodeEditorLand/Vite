@@ -1,1 +1,1 @@
-export const msg = '[success] mapped mjs file'
+export const msg = "[success] mapped mjs file";
