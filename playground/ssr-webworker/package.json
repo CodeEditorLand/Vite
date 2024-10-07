@@ -5,7 +5,7 @@
 	},
 	"devDependencies": {
 		"@vitejs/test-resolve-linked": "workspace:*",
-		"miniflare": "3.20240925.0"
+		"miniflare": "3.20240925.1"
 	},
 	"name": "@vitejs/test-ssr-webworker",
 	"scripts": {
