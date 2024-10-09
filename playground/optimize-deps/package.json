@@ -1,4 +1,11 @@
 {
+	"name": "@vitejs/test-optimize-deps",
+	"scripts": {
+		"build": "vite build",
+		"debug": "node --inspect-brk ../../packages/vite/bin/vite",
+		"dev": "vite --force",
+		"preview": "vite preview"
+	},
 	"dependencies": {
 		"@vitejs/longfilename-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa": "file:./longfilename",
 		"@vitejs/test-added-in-entries": "file:./added-in-entries",
@@ -34,12 +41,5 @@
 		"lodash.clonedeep": "4.5.0",
 		"phoenix": "1.7.14",
 		"url": "0.11.4"
-	},
-	"name": "@vitejs/test-optimize-deps",
-	"scripts": {
-		"build": "vite build",
-		"debug": "node --inspect-brk ../../packages/vite/bin/vite",
-		"dev": "vite --force",
-		"preview": "vite preview"
 	}
 }

@@ -1,12 +1,12 @@
 {
-	"devDependencies": {
-		"sass": "1.79.4"
-	},
 	"name": "@vitejs/test-multiple-entrypoints",
 	"scripts": {
 		"build": "vite build",
 		"debug": "node --inspect-brk ../../packages/vite/bin/vite",
 		"dev": "vite",
 		"preview": "vite preview"
+	},
+	"devDependencies": {
+		"sass": "1.79.4"
 	}
 }

@@ -1,10 +1,10 @@
 {
-	"dependencies": {
-		"@vitejs/test-missing-dep": "file:./missing-dep"
-	},
-	"devDependencies": {},
 	"name": "@vitejs/test-optimize-missing-deps",
 	"scripts": {
 		"dev": "node server"
-	}
+	},
+	"dependencies": {
+		"@vitejs/test-missing-dep": "file:./missing-dep"
+	},
+	"devDependencies": {}
 }

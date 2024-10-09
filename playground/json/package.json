@@ -1,7 +1,4 @@
 {
-	"devDependencies": {
-		"@vitejs/test-json-module": "file:./json-module"
-	},
 	"name": "@vitejs/test-json",
 	"scripts": {
 		"build": "vite build",
@@ -11,5 +8,8 @@
 		"dev:ssr": "node server",
 		"preview": "vite preview",
 		"serve:ssr": "NODE_ENV=production node server"
+	},
+	"devDependencies": {
+		"@vitejs/test-json-module": "file:./json-module"
 	}
 }
