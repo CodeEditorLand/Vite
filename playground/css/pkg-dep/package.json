@@ -1,4 +1,4 @@
 {
-	"main": "index.js",
-	"name": "dep"
+	"name": "dep",
+	"main": "index.js"
 }

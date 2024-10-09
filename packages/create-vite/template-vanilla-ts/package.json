@@ -1,9 +1,9 @@
 {
-	"devDependencies": {},
 	"name": "vite-typescript-starter",
 	"scripts": {
 		"build": "tsc && vite build",
 		"dev": "vite",
 		"preview": "vite preview"
-	}
+	},
+	"devDependencies": {}
 }

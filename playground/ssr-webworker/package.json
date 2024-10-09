@@ -1,4 +1,9 @@
 {
+	"name": "@vitejs/test-ssr-webworker",
+	"scripts": {
+		"build:worker": "vite build --ssr src/entry-worker.jsx --outDir dist/worker",
+		"dev": "DEV=1 node worker"
+	},
 	"dependencies": {
 		"@vitejs/test-browser-exports": "file:./browser-exports",
 		"@vitejs/test-worker-exports": "file:./worker-exports"
@@ -6,10 +11,5 @@
 	"devDependencies": {
 		"@vitejs/test-resolve-linked": "workspace:*",
 		"miniflare": "3.20240925.1"
-	},
-	"name": "@vitejs/test-ssr-webworker",
-	"scripts": {
-		"build:worker": "vite build --ssr src/entry-worker.jsx --outDir dist/worker",
-		"dev": "DEV=1 node worker"
 	}
 }

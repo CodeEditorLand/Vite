@@ -1,10 +1,10 @@
 {
+	"name": "@vitejs/test-css-dep-exports",
 	"exports": {
 		".": {
 			"import": "./index.js",
 			"sass": "./style.scss",
 			"style": "./style.css"
 		}
-	},
-	"name": "@vitejs/test-css-dep-exports"
+	}
 }
