@@ -1,12 +1,12 @@
 {
-	"dependencies": {
-		"lit": "3.2.1"
-	},
-	"devDependencies": {},
 	"name": "vite-lit-starter",
 	"scripts": {
 		"build": "vite build",
 		"dev": "vite",
 		"preview": "vite preview"
-	}
+	},
+	"dependencies": {
+		"lit": "3.2.1"
+	},
+	"devDependencies": {}
 }
