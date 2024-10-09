@@ -1,4 +1,4 @@
 {
-	"main": "index.js",
-	"name": "@vitejs/test-dep-a"
+	"name": "@vitejs/test-dep-a",
+	"main": "index.js"
 }

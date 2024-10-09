@@ -1,7 +1,7 @@
 {
+	"name": "@vitejs/test-resolve-exports-from-root",
 	"exports": {
 		".": "./index.js",
 		"./nested": "./file.js"
-	},
-	"name": "@vitejs/test-resolve-exports-from-root"
+	}
 }
