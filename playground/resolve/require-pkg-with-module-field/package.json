@@ -1,7 +1,7 @@
 {
-	"name": "@vitejs/test-require-pkg-with-module-field",
-	"main": "./index.cjs",
 	"dependencies": {
 		"bignumber.js": "9.1.2"
-	}
+	},
+	"main": "./index.cjs",
+	"name": "@vitejs/test-require-pkg-with-module-field"
 }

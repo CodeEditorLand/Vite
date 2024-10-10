@@ -1,7 +1,7 @@
 {
-	"name": "@vitejs/test-dep-optimize-exports-with-root-glob",
 	"exports": {
 		".": "./index.js",
 		"./*": "./*"
-	}
+	},
+	"name": "@vitejs/test-dep-optimize-exports-with-root-glob"
 }

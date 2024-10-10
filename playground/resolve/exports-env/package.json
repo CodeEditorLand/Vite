@@ -1,5 +1,4 @@
 {
-	"name": "@vitejs/test-resolve-exports-env",
 	"exports": {
 		"browser": "./browser.js",
 		"default": "./fallback.umd.js",
@@ -9,5 +8,6 @@
 				"production": "./browser.prod.mjs"
 			}
 		}
-	}
+	},
+	"name": "@vitejs/test-resolve-exports-env"
 }

@@ -1,10 +1,10 @@
 {
+	"dependencies": {},
+	"devDependencies": {},
 	"name": "vite-vue-starter",
 	"scripts": {
 		"build": "vite build",
 		"dev": "vite",
 		"preview": "vite preview"
-	},
-	"dependencies": {},
-	"devDependencies": {}
+	}
 }

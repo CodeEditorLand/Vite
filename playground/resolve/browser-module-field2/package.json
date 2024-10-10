@@ -1,5 +1,5 @@
 {
-	"name": "@vitejs/test-resolve-browser-module-field2",
+	"browser": "index.web.js",
 	"module": "index.js",
-	"browser": "index.web.js"
+	"name": "@vitejs/test-resolve-browser-module-field2"
 }

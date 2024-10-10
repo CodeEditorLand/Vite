@@ -1,5 +1,5 @@
 {
-	"name": "@vitejs/test-resolve-browser-field-bare-import-success",
 	"main": "main.js",
-	"module": "module.js"
+	"module": "module.js",
+	"name": "@vitejs/test-resolve-browser-field-bare-import-success"
 }

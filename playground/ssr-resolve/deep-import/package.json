@@ -1,4 +1,4 @@
 {
-	"name": "@vitejs/test-deep-import",
-	"module": "index.js"
+	"module": "index.js",
+	"name": "@vitejs/test-deep-import"
 }

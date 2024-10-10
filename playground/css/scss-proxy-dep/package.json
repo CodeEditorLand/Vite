@@ -1,7 +1,7 @@
 {
-	"name": "@vitejs/test-scss-proxy-dep",
 	"dependencies": {
 		"@vitejs/test-scss-proxy-dep-nested": "file:../scss-proxy-dep-nested"
 	},
+	"name": "@vitejs/test-scss-proxy-dep",
 	"sass": "index.scss"
 }
