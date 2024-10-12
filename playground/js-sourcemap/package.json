@@ -1,7 +1,7 @@
 {
 	"dependencies": {
 		"@vitejs/test-importee-pkg": "file:importee-pkg",
-		"magic-string": "0.30.11"
+		"magic-string": "0.30.12"
 	},
 	"name": "@vitejs/test-js-sourcemap",
 	"scripts": {
