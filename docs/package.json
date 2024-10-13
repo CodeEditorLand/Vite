@@ -2,7 +2,7 @@
 	"devDependencies": {
 		"@shikijs/vitepress-twoslash": "1.22.0",
 		"feed": "4.2.2",
-		"vitepress": "1.4.0"
+		"vitepress": "1.4.1"
 	},
 	"name": "docs",
 	"scripts": {
