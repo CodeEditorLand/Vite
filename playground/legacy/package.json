@@ -1,8 +1,4 @@
 {
-	"devDependencies": {
-		"@vitejs/plugin-legacy": "workspace:*",
-		"terser": "5.36.0"
-	},
 	"name": "@vitejs/test-legacy",
 	"scripts": {
 		"build": "vite build --debug legacy",
@@ -14,5 +10,9 @@
 		"debug": "node --inspect-brk ../../packages/vite/bin/vite",
 		"dev": "vite",
 		"preview": "vite preview"
+	},
+	"devDependencies": {
+		"@vitejs/plugin-legacy": "workspace:*",
+		"terser": "5.36.0"
 	}
 }
