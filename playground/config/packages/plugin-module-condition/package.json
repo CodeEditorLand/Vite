@@ -1,4 +1,5 @@
 {
+	"name": "@vite/test-config-plugin-module-condition",
 	"exports": {
 		".": {
 			"import": "./index.mjs",
@@ -6,6 +7,5 @@
 			"require": "./index.cjs",
 			"types": "./index.d.ts"
 		}
-	},
-	"name": "@vite/test-config-plugin-module-condition"
+	}
 }

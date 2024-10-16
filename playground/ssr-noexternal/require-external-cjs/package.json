@@ -1,7 +1,7 @@
 {
+	"name": "@vitejs/test-require-external-cjs",
+	"main": "main.js",
 	"dependencies": {
 		"@vitejs/test-external-cjs": "file:../external-cjs"
-	},
-	"main": "main.js",
-	"name": "@vitejs/test-require-external-cjs"
+	}
 }

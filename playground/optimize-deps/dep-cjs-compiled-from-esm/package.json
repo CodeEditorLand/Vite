@@ -1,4 +1,4 @@
 {
-	"main": "index.js",
-	"name": "@vitejs/test-dep-cjs-compiled-from-esm"
+	"name": "@vitejs/test-dep-cjs-compiled-from-esm",
+	"main": "index.js"
 }
