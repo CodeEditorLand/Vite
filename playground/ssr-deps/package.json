@@ -1,10 +1,4 @@
 {
-	"name": "@vitejs/test-ssr-deps",
-	"scripts": {
-		"debug": "node --inspect-brk server",
-		"dev": "node server",
-		"serve": "NODE_ENV=production node server"
-	},
 	"dependencies": {
 		"@vitejs/test-css-lib": "file:./css-lib",
 		"@vitejs/test-define-properties-exports": "file:./define-properties-exports",
@@ -29,5 +23,11 @@
 		"@vitejs/test-ts-transpiled-exports": "file:./ts-transpiled-exports",
 		"bcrypt": "5.1.1"
 	},
-	"devDependencies": {}
+	"devDependencies": {},
+	"name": "@vitejs/test-ssr-deps",
+	"scripts": {
+		"debug": "node --inspect-brk server",
+		"dev": "node server",
+		"serve": "NODE_ENV=production node server"
+	}
 }

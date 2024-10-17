@@ -1,13 +1,13 @@
 {
+	"devDependencies": {
+		"fast-glob": "3.3.2",
+		"sass": "1.79.5"
+	},
 	"name": "@vitejs/test-backend-integration",
 	"scripts": {
 		"build": "vite build",
 		"debug": "node --inspect-brk ../../packages/vite/bin/vite",
 		"dev": "vite",
 		"preview": "vite preview"
-	},
-	"devDependencies": {
-		"fast-glob": "3.3.2",
-		"sass": "1.79.5"
 	}
 }

@@ -1,4 +1,4 @@
 {
-	"name": "@vitejs/test-module-a",
-	"main": "linked.js"
+	"main": "linked.js",
+	"name": "@vitejs/test-module-a"
 }
