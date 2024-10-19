@@ -19,7 +19,7 @@
 		"execa": "9.4.1",
 		"globals": "15.11.0",
 		"lint-staged": "15.2.10",
-		"npm-run-all2": "6.2.3",
+		"npm-run-all2": "6.2.4",
 		"picocolors": "1.1.1",
 		"playwright-chromium": "1.48.1",
 		"rimraf": "6.0.1",
