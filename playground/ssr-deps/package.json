@@ -22,7 +22,7 @@
     "@vitejs/test-nested-exclude": "file:./nested-exclude",
     "@vitejs/test-no-external-cjs": "file:./no-external-cjs",
     "@vitejs/test-no-external-css": "file:./no-external-css",
-    "@vitejs/test-non-optimized-with-nested-external": "workspace:*",
+    "@vitejs/test-non-optimized-with-nested-external": "0.0.1",
     "@vitejs/test-object-assigned-exports": "file:./object-assigned-exports",
     "@vitejs/test-only-object-assigned-exports": "file:./only-object-assigned-exports",
     "@vitejs/test-optimized-cjs-with-nested-external": "file:./optimized-with-nested-external",
