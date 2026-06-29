@@ -15,7 +15,7 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "vite": "6.3.5",
+    "vite": "6.4.3",
     "@vitejs/plugin-legacy": "6.1.1",
     "express": "^5.1.0",
     "terser": "^5.42.0"
